@@ -1,0 +1,141 @@
+public class T3 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        T3 r0;
+
+        r0 := @this: T3;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static void main(java.lang.String[])
+    {
+        T3_A $r0, $r7, $r8, $r9, $r10, r18;
+        T3_D $r2, $r11;
+        T3_B $r4, $r5, $r6;
+        java.lang.String[] r17;
+        int i0, i1, i2, i3;
+
+        r17 := @parameter0: java.lang.String[];
+
+        $r0 = new T3_A;
+
+        specialinvoke $r0.<T3_A: void <init>()>();
+
+        $r2 = new T3_D;
+
+        specialinvoke $r2.<T3_D: void <init>()>();
+
+        $r4 = new T3_B;
+
+        specialinvoke $r4.<T3_B: void <init>()>();
+
+        $r2.<T3_B: T3_A a2> = $r4;
+
+        $r5 = new T3_B;
+
+        specialinvoke $r5.<T3_B: void <init>()>();
+
+        $r2.<T3_B: T3_A a1> = $r5;
+
+        $r7 = $r2.<T3_B: T3_A a1>;
+
+        $r6 = new T3_B;
+
+        specialinvoke $r6.<T3_B: void <init>()>();
+
+        $r7.<T3_A: T3_A a1> = $r6;
+
+        $r8 = $r2.<T3_B: T3_A a1>;
+
+        r18 = $r8.<T3_A: T3_A a1>;
+
+        $r9 = $r2.<T3_B: T3_A a2>;
+
+        $r10 = virtualinvoke $r2.<T3_B: T3_A foo(T3_A)>($r2);
+
+        $r9.<T3_A: T3_A a1> = $r10;
+
+        $r11 = new T3_D;
+
+        specialinvoke $r11.<T3_D: void <init>()>();
+
+        i0 = 0;
+
+     label1:
+        if i0 >= 1000000 goto label2;
+
+        virtualinvoke $r2.<T3_B: T3_A foo(T3_A)>(r18);
+
+        virtualinvoke $r11.<T3_B: T3_A foo(T3_A)>($r2);
+
+        virtualinvoke $r11.<T3_B: T3_A foo(T3_A)>($r11);
+
+        r18 = virtualinvoke $r2.<T3_B: T3_A foo(T3_A)>($r11);
+
+        i0 = i0 + 1;
+
+        goto label1;
+
+     label2:
+        i1 = 0;
+
+     label3:
+        if i1 >= 1000000 goto label4;
+
+        virtualinvoke $r2.<T3_B: T3_A foo(T3_A)>(r18);
+
+        virtualinvoke $r11.<T3_B: T3_A foo(T3_A)>($r2);
+
+        virtualinvoke $r11.<T3_B: T3_A foo(T3_A)>($r11);
+
+        r18 = virtualinvoke $r2.<T3_B: T3_A foo(T3_A)>($r11);
+
+        i1 = i1 + 1;
+
+        goto label3;
+
+     label4:
+        i2 = 0;
+
+     label5:
+        if i2 >= 1000000 goto label6;
+
+        virtualinvoke $r2.<T3_B: T3_A foo(T3_A)>(r18);
+
+        virtualinvoke $r11.<T3_B: T3_A foo(T3_A)>($r2);
+
+        virtualinvoke $r11.<T3_B: T3_A foo(T3_A)>($r11);
+
+        r18 = virtualinvoke $r2.<T3_B: T3_A foo(T3_A)>($r11);
+
+        i2 = i2 + 1;
+
+        goto label5;
+
+     label6:
+        i3 = 0;
+
+     label7:
+        if i3 >= 1000000 goto label8;
+
+        virtualinvoke $r2.<T3_B: T3_A foo(T3_A)>(r18);
+
+        virtualinvoke $r11.<T3_B: T3_A foo(T3_A)>($r2);
+
+        virtualinvoke $r11.<T3_B: T3_A foo(T3_A)>($r11);
+
+        r18 = virtualinvoke $r2.<T3_B: T3_A foo(T3_A)>($r11);
+
+        i3 = i3 + 1;
+
+        goto label7;
+
+     label8:
+        return;
+    }
+}

@@ -1,0 +1,85 @@
+public class T6 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        T6 r0;
+
+        r0 := @this: T6;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static void main(java.lang.String[])
+    {
+        A $r0, r16;
+        C $r2, $r5;
+        B $r3, $r14;
+        H $r7, r9;
+        D $r12;
+        java.lang.String[] r15;
+        int i2;
+
+        r15 := @parameter0: java.lang.String[];
+
+        $r0 = new A;
+
+        specialinvoke $r0.<A: void <init>()>();
+
+        virtualinvoke $r0.<A: void foo()>();
+
+        i2 = 100 + 1;
+
+        if i2 <= 100 goto label1;
+
+        $r14 = new B;
+
+        specialinvoke $r14.<B: void <init>()>();
+
+        r16 = $r14;
+
+        goto label2;
+
+     label1:
+        $r2 = new C;
+
+        specialinvoke $r2.<C: void <init>()>();
+
+        r16 = $r2;
+
+     label2:
+        virtualinvoke r16.<A: void foo()>();
+
+        $r3 = new B;
+
+        specialinvoke $r3.<B: void <init>()>();
+
+        $r5 = new C;
+
+        specialinvoke $r5.<C: void <init>()>();
+
+        virtualinvoke $r5.<C: void foo()>();
+
+        staticinvoke <B: void bar()>();
+
+        $r7 = new H;
+
+        specialinvoke $r7.<H: void <init>()>();
+
+        r9 = virtualinvoke $r7.<H: H foo()>();
+
+        virtualinvoke r9.<H: H foo()>();
+
+        virtualinvoke $r3.<A: void foo()>();
+
+        $r12 = new D;
+
+        specialinvoke $r12.<D: void <init>()>();
+
+        virtualinvoke $r12.<B: void foo()>();
+
+        return;
+    }
+}

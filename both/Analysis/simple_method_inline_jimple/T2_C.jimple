@@ -1,0 +1,28 @@
+class T2_C extends T2_A
+{
+
+    void <init>()
+    {
+        T2_C r0;
+
+        r0 := @this: T2_C;
+
+        specialinvoke r0.<T2_A: void <init>()>();
+
+        return;
+    }
+
+    public int foo(int)
+    {
+        int i0, $i1;
+        T2_C r0;
+
+        r0 := @this: T2_C;
+
+        i0 := @parameter0: int;
+
+        $i1 = i0 - 5;
+
+        return $i1;
+    }
+}

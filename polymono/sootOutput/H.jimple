@@ -1,0 +1,50 @@
+class H extends java.lang.Object
+{
+
+    void <init>()
+    {
+        H r0;
+
+        r0 := @this: H;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public H foo()
+    {
+        java.io.PrintStream $r0;
+        H $r1, r2;
+
+        r2 := @this: H;
+
+        $r0 = <java.lang.System: java.io.PrintStream out>;
+
+        virtualinvoke $r0.<java.io.PrintStream: void println(java.lang.String)>("This is H foo");
+
+        $r1 = new H;
+
+        specialinvoke $r1.<H: void <init>()>();
+
+        return $r1;
+    }
+
+    static H foo_static(H)
+    {
+        java.io.PrintStream $r0;
+        H $r1, r2;
+
+        r2 := @parameter0: H;
+
+        $r0 = <java.lang.System: java.io.PrintStream out>;
+
+        virtualinvoke $r0.<java.io.PrintStream: void println(java.lang.String)>("This is H foo");
+
+        $r1 = new H;
+
+        specialinvoke $r1.<H: void <init>()>();
+
+        return $r1;
+    }
+}

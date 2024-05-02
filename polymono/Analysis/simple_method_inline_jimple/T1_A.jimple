@@ -1,0 +1,29 @@
+class T1_A extends java.lang.Object
+{
+    public T1_A a1;
+
+    void <init>()
+    {
+        T1_A r0;
+
+        r0 := @this: T1_A;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public int zar(int)
+    {
+        int i0, $i1;
+        T1_A r0;
+
+        r0 := @this: T1_A;
+
+        i0 := @parameter0: int;
+
+        $i1 = i0 * 3;
+
+        return $i1;
+    }
+}

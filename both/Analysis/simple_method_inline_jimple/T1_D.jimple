@@ -1,0 +1,80 @@
+class T1_D extends T1_B
+{
+    public T1_B b1;
+
+    void <init>()
+    {
+        T1_D r0;
+
+        r0 := @this: T1_D;
+
+        specialinvoke r0.<T1_B: void <init>()>();
+
+        return;
+    }
+
+    public T1_B foo(T1_A)
+    {
+        T1_D $r0, $r2, r4;
+        T1_B r3;
+        T1_A r5;
+
+        r4 := @this: T1_D;
+
+        r5 := @parameter0: T1_A;
+
+        $r0 = new T1_D;
+
+        specialinvoke $r0.<T1_D: void <init>()>();
+
+        $r2 = new T1_D;
+
+        specialinvoke $r2.<T1_D: void <init>()>();
+
+        $r0.<T1_D: T1_B b1> = $r2;
+
+        r3 = $r0.<T1_D: T1_B b1>;
+
+        return r3;
+    }
+
+    public static int bar(int)
+    {
+        int i0, $i1;
+
+        i0 := @parameter0: int;
+
+        $i1 = i0 + 2;
+
+        return $i1;
+    }
+
+    public int zar(int)
+    {
+        int i0, $i1;
+        T1_D r0;
+
+        r0 := @this: T1_D;
+
+        i0 := @parameter0: int;
+
+        $i1 = i0 - 3;
+
+        return $i1;
+    }
+
+    public volatile T1_A foo(T1_A)
+    {
+        T1_D r0;
+        T1_A r1;
+        T1_B $r2;
+
+        r0 := @this: T1_D;
+
+        r1 := @parameter0: T1_A;
+
+        $r2 = virtualinvoke r0.<T1_D: T1_B foo(T1_A)>(r1);
+
+        return $r2;
+    }
+}

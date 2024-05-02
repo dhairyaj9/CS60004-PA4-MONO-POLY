@@ -1,0 +1,28 @@
+class T2_A extends java.lang.Object
+{
+
+    void <init>()
+    {
+        T2_A r0;
+
+        r0 := @this: T2_A;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public int foo(int)
+    {
+        int i0, $i1;
+        T2_A r0;
+
+        r0 := @this: T2_A;
+
+        i0 := @parameter0: int;
+
+        $i1 = i0 * 3;
+
+        return $i1;
+    }
+}

@@ -1,0 +1,373 @@
+public class T10 extends java.lang.Object
+{
+/*T10.java*/
+    public T10 f;
+    public int val;
+    public static T10 global;
+
+/*Dependences*/
+    public void <init>()
+    {
+        T10 r0;
+
+        r0 := @this: T10;
+/*AllocNode 2006 T10 in method <T10: void foo(T10)>*/
+/*LocalVarNode 130996 Pair <T10: void <init>()>,THIS_NODE <T10: void <init>()>*/
+/*FieldReadTag*/
+/*FieldWriteTag*/
+/*Live Variable: r0*/
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+/*FieldReadTag*/
+/*FieldWriteTag*/
+/*r0 has reaching def: r0 := @this: T10*/
+
+        return;
+/*FieldReadTag*/
+/*FieldWriteTag*/
+    }
+
+/*Dependences( 0, 1 ) ( 2, 3 ) ( 6, 7 ) ( 8, 9 ) ( 0, 2 ) ( 1, 3 ) ( 5, 7 ) ( 1, 2 ) ( 0, 3 ) ( 2, 6 ) ( 3, 7 ) ( 3, 6 ) ( 2, 7 ) ( 0, 6 ) ( 1, 7 ) ( 1, 6 ) ( 0, 7 ) ( 0, 8 ) ( 1, 8 ) ( 2, 8 ) ( 3, 8 ) ( 5, 9 ) ( 5, 8 ) ( 6, 8 ) ( 7, 9 ) ( 7, 8 ) */
+    public static void foo(T10)
+    {
+        java.io.PrintStream $r0, $r5, $r6;
+        T10 r1, $r2, r4, r7;
+        int i0;
+
+        r1 := @parameter0: T10;
+/*AllocNode 2006 T10 in method <T10: void foo(T10)>*/
+/*LocalVarNode 130998 Pair <T10: void foo(T10)>,0 <T10: void foo(T10)>*/
+/*FieldReadTag*/
+/*FieldWriteTag*/
+/*Live Variable: r1*/
+
+        $r0 = <java.lang.System: java.io.PrintStream out>;
+/*AllocNode 48 java.io.PrintStream in method <java.lang.System: java.io.PrintStream newPrintStream(java.io.FileOutputStream,java.lang.String)>*/
+/*GlobalVarNode 1816 <java.lang.System: java.io.PrintStream out>*/
+/*SECallsNative
+SEReads : 0
+SEWrites: 1
+*/
+/*Live Variable: r1*/
+/*Live Variable: $r0*/
+
+        virtualinvoke $r0.<java.io.PrintStream: void println(java.lang.String)>("This is T10 foo");
+/*SECallsNative
+SEReads : 2
+SEWrites: 3
+*/
+/*$r0 has reaching def: $r0 = <java.lang.System: java.io.PrintStream out>*/
+/*Live Variable: r1*/
+
+        <T10: T10 global> = r1;
+/*AllocNode 2006 T10 in method <T10: void foo(T10)>*/
+/*LocalVarNode 130999 r1 <T10: void foo(T10)>*/
+/*SEWrites: 4
+*/
+/*FieldReadTag*/
+/*FieldWriteTag*/
+/*r1 has reaching def: r1 := @parameter0: T10*/
+/*Live Variable: r1*/
+
+        i0 = 0;
+/*FieldReadTag*/
+/*FieldWriteTag*/
+/*Live Variable: r1*/
+/*Live Variable: i0*/
+
+     label1:
+        if i0 >= 10 goto label3;
+/*FieldReadTag*/
+/*FieldWriteTag*/
+/*i0 has reaching def: i0 = 0*/
+/*i0 has reaching def: i0 = i0 + 1*/
+/*Live Variable: r1*/
+/*Live Variable: i0*/
+
+        r4 = r1.<T10: T10 f>;
+/*AllocNode 2006 T10 in method <T10: void foo(T10)>*/
+/*GlobalVarNode 131004 <T10: T10 f>*/
+/*SEReads : 5
+*/
+/*FieldReadTag*/
+/*FieldWriteTag*/
+/*r1 has reaching def: r1 := @parameter0: T10*/
+/*Live Variable: r1*/
+/*Live Variable: i0*/
+/*Live Variable: r4*/
+
+        if r4 == null goto label2;
+/*FieldReadTag*/
+/*FieldWriteTag*/
+/*r4 has reaching def: r4 = r1.<T10: T10 f>*/
+/*Live Variable: r1*/
+/*Live Variable: i0*/
+
+        $r6 = <java.lang.System: java.io.PrintStream out>;
+/*AllocNode 48 java.io.PrintStream in method <java.lang.System: java.io.PrintStream newPrintStream(java.io.FileOutputStream,java.lang.String)>*/
+/*GlobalVarNode 1816 <java.lang.System: java.io.PrintStream out>*/
+/*SEReads : 6
+*/
+/*FieldReadTag*/
+/*FieldWriteTag*/
+/*Live Variable: r1*/
+/*Live Variable: i0*/
+/*Live Variable: $r6*/
+
+        virtualinvoke $r6.<java.io.PrintStream: void println(java.lang.String)>("temp is not null");
+/*SECallsNative
+SEReads : 2
+SEWrites: 3
+*/
+/*$r6 has reaching def: $r6 = <java.lang.System: java.io.PrintStream out>*/
+/*Live Variable: r1*/
+/*Live Variable: i0*/
+
+     label2:
+        $r5 = <java.lang.System: java.io.PrintStream out>;
+/*AllocNode 48 java.io.PrintStream in method <java.lang.System: java.io.PrintStream newPrintStream(java.io.FileOutputStream,java.lang.String)>*/
+/*GlobalVarNode 1816 <java.lang.System: java.io.PrintStream out>*/
+/*SEReads : 6
+*/
+/*FieldReadTag*/
+/*FieldWriteTag*/
+/*Live Variable: r1*/
+/*Live Variable: i0*/
+/*Live Variable: $r5*/
+
+        virtualinvoke $r5.<java.io.PrintStream: void println(int)>(i0);
+/*SECallsNative
+SEReads : 2
+SEWrites: 3
+*/
+/*i0 has reaching def: i0 = 0*/
+/*i0 has reaching def: i0 = i0 + 1*/
+/*$r5 has reaching def: $r5 = <java.lang.System: java.io.PrintStream out>*/
+/*Live Variable: r1*/
+/*Live Variable: i0*/
+
+        i0 = i0 + 1;
+/*FieldReadTag*/
+/*FieldWriteTag*/
+/*i0 has reaching def: i0 = 0*/
+/*i0 has reaching def: i0 = i0 + 1*/
+/*Live Variable: r1*/
+/*Live Variable: i0*/
+
+        goto label1;
+/*FieldReadTag*/
+/*FieldWriteTag*/
+/*Live Variable: r1*/
+/*Live Variable: i0*/
+
+     label3:
+        r7 = staticinvoke <T10: T10 goo(T10)>(r1);
+/*AllocNode 2006 T10 in method <T10: void foo(T10)>*/
+/*LocalVarNode 131010 Parm -2 to <T10: T10 goo(T10)> <T10: T10 goo(T10)>*/
+/*SECallsNative
+SEReads : 7
+SEWrites: 8
+*/
+/*r1 has reaching def: r1 := @parameter0: T10*/
+/*Live Variable: r7*/
+
+        $r2 = new T10;
+/*AllocNode 2006 T10 in method <T10: void foo(T10)>*/
+/*AllocNode 2006 T10 in method <T10: void foo(T10)>*/
+/*FieldReadTag*/
+/*FieldWriteTag*/
+/*Live Variable: r7*/
+/*Live Variable: $r2*/
+
+        specialinvoke $r2.<T10: void <init>()>();
+/*FieldReadTag*/
+/*FieldWriteTag*/
+/*$r2 has reaching def: $r2 = new T10*/
+/*Live Variable: r7*/
+/*Live Variable: $r2*/
+
+        r7.<T10: T10 f> = $r2;
+/*AllocNode 2006 T10 in method <T10: void foo(T10)>*/
+/*LocalVarNode 131021 $r2 <T10: void main(java.lang.String[])>*/
+/*LocalVarNode 131007 $r2 <T10: void foo(T10)>*/
+/*LocalVarNode 131014 $r2 <T10: T10 goo(T10)>*/
+/*SEWrites: 9
+*/
+/*FieldReadTag*/
+/*FieldWriteTag*/
+/*r7 has reaching def: r7 = staticinvoke <T10: T10 goo(T10)>(r1)*/
+/*$r2 has reaching def: $r2 = new T10*/
+
+        return;
+/*FieldReadTag*/
+/*FieldWriteTag*/
+    }
+
+/*Dependences( 2, 3 ) ( 1, 3 ) ( 1, 2 ) ( 1, 4 ) ( 2, 4 ) ( 3, 4 ) */
+    public static T10 goo(T10)
+    {
+        T10 $r0, $r2, $r3, r5;
+        java.io.PrintStream $r4;
+
+        r5 := @parameter0: T10;
+/*AllocNode 2006 T10 in method <T10: void foo(T10)>*/
+/*LocalVarNode 131009 Pair <T10: T10 goo(T10)>,0 <T10: T10 goo(T10)>*/
+/*FieldReadTag*/
+/*FieldWriteTag*/
+
+        $r0 = new T10;
+/*AllocNode 2006 T10 in method <T10: void foo(T10)>*/
+/*AllocNode 2006 T10 in method <T10: void foo(T10)>*/
+/*FieldReadTag*/
+/*FieldWriteTag*/
+/*Live Variable: $r0*/
+
+        specialinvoke $r0.<T10: void <init>()>();
+/*FieldReadTag*/
+/*FieldWriteTag*/
+/*$r0 has reaching def: $r0 = new T10*/
+/*Live Variable: $r0*/
+
+        $r2 = new T10;
+/*AllocNode 2006 T10 in method <T10: void foo(T10)>*/
+/*AllocNode 2006 T10 in method <T10: void foo(T10)>*/
+/*FieldReadTag*/
+/*FieldWriteTag*/
+/*Live Variable: $r0*/
+/*Live Variable: $r2*/
+
+        specialinvoke $r2.<T10: void <init>()>();
+/*FieldReadTag*/
+/*FieldWriteTag*/
+/*$r2 has reaching def: $r2 = new T10*/
+/*Live Variable: $r0*/
+/*Live Variable: $r2*/
+
+        $r0.<T10: T10 f> = $r2;
+/*AllocNode 2006 T10 in method <T10: void foo(T10)>*/
+/*LocalVarNode 131021 $r2 <T10: void main(java.lang.String[])>*/
+/*LocalVarNode 131007 $r2 <T10: void foo(T10)>*/
+/*LocalVarNode 131014 $r2 <T10: T10 goo(T10)>*/
+/*SEWrites: 0
+*/
+/*FieldReadTag*/
+/*FieldWriteTag*/
+/*$r0 has reaching def: $r0 = new T10*/
+/*$r2 has reaching def: $r2 = new T10*/
+/*Live Variable: $r0*/
+
+        $r3 = $r0.<T10: T10 f>;
+/*AllocNode 2006 T10 in method <T10: void foo(T10)>*/
+/*GlobalVarNode 131004 <T10: T10 f>*/
+/*SEReads : 0
+*/
+/*FieldReadTag*/
+/*FieldWriteTag*/
+/*$r0 has reaching def: $r0 = new T10*/
+/*Live Variable: $r0*/
+/*Live Variable: $r3*/
+
+        if $r3 == null goto label1;
+/*FieldReadTag*/
+/*FieldWriteTag*/
+/*$r3 has reaching def: $r3 = $r0.<T10: T10 f>*/
+/*Live Variable: $r0*/
+
+        $r4 = <java.lang.System: java.io.PrintStream out>;
+/*AllocNode 48 java.io.PrintStream in method <java.lang.System: java.io.PrintStream newPrintStream(java.io.FileOutputStream,java.lang.String)>*/
+/*GlobalVarNode 1816 <java.lang.System: java.io.PrintStream out>*/
+/*SECallsNative
+SEReads : 1
+SEWrites: 2
+*/
+/*Live Variable: $r0*/
+/*Live Variable: $r4*/
+
+        virtualinvoke $r4.<java.io.PrintStream: void println(java.lang.String)>("temp.f is not null");
+/*SECallsNative
+SEReads : 3
+SEWrites: 4
+*/
+/*$r4 has reaching def: $r4 = <java.lang.System: java.io.PrintStream out>*/
+/*Live Variable: $r0*/
+
+     label1:
+        $r0.<T10: int val> = 5;
+/*SEWrites: 5
+*/
+/*FieldReadTag*/
+/*FieldWriteTag*/
+/*$r0 has reaching def: $r0 = new T10*/
+/*Live Variable: $r0*/
+
+        return $r0;
+/*FieldReadTag*/
+/*FieldWriteTag*/
+/*$r0 has reaching def: $r0 = new T10*/
+    }
+
+/*Dependences( 0, 1 ) ( 0, 2 ) ( 1, 2 ) */
+    public static void main(java.lang.String[])
+    {
+        T10 $r0, $r2;
+        java.lang.String[] r3;
+
+        r3 := @parameter0: java.lang.String[];
+/*AllocNode 16 java.lang.String[] in method <java.lang.String: java.lang.String[] split(java.lang.String,int)>*/
+/*LocalVarNode 131017 Pair <T10: void main(java.lang.String[])>,0 <T10: void main(java.lang.String[])>*/
+/*FieldReadTag*/
+/*FieldWriteTag*/
+
+        $r0 = new T10;
+/*AllocNode 2006 T10 in method <T10: void foo(T10)>*/
+/*AllocNode 2006 T10 in method <T10: void foo(T10)>*/
+/*FieldReadTag*/
+/*FieldWriteTag*/
+/*Live Variable: $r0*/
+
+        specialinvoke $r0.<T10: void <init>()>();
+/*FieldReadTag*/
+/*FieldWriteTag*/
+/*$r0 has reaching def: $r0 = new T10*/
+/*Live Variable: $r0*/
+
+        $r2 = new T10;
+/*AllocNode 2006 T10 in method <T10: void foo(T10)>*/
+/*AllocNode 2006 T10 in method <T10: void foo(T10)>*/
+/*FieldReadTag*/
+/*FieldWriteTag*/
+/*Live Variable: $r0*/
+/*Live Variable: $r2*/
+
+        specialinvoke $r2.<T10: void <init>()>();
+/*FieldReadTag*/
+/*FieldWriteTag*/
+/*$r2 has reaching def: $r2 = new T10*/
+/*Live Variable: $r0*/
+/*Live Variable: $r2*/
+
+        $r0.<T10: T10 f> = $r2;
+/*AllocNode 2006 T10 in method <T10: void foo(T10)>*/
+/*LocalVarNode 131021 $r2 <T10: void main(java.lang.String[])>*/
+/*LocalVarNode 131007 $r2 <T10: void foo(T10)>*/
+/*LocalVarNode 131014 $r2 <T10: T10 goo(T10)>*/
+/*SEWrites: 0
+*/
+/*FieldReadTag*/
+/*FieldWriteTag*/
+/*$r0 has reaching def: $r0 = new T10*/
+/*$r2 has reaching def: $r2 = new T10*/
+/*Live Variable: $r0*/
+
+        staticinvoke <T10: void foo(T10)>($r0);
+/*SECallsNative
+SEReads : 1
+SEWrites: 2
+*/
+/*$r0 has reaching def: $r0 = new T10*/
+
+        return;
+/*FieldReadTag*/
+/*FieldWriteTag*/
+    }
+}

@@ -1,0 +1,521 @@
+Soot started on Sun Apr 28 15:29:30 IST 2024
+Starting inlining
+
+-------------------------------------------- FUNCTION - <T10: T10 goo(T10)>-------------------------------------------
+No loops found in method
+Inlining method: <T10: T10 zar()> in method: <T10: T10 goo(T10)> at line: 18
+
+
+Printing all the new units added to the caller body: 
+
+
+Added : $r0_inlined_18 = <java.lang.System: java.io.PrintStream out>
+
+Added : virtualinvoke $r0_inlined_18.<java.io.PrintStream: void println(java.lang.String)>("This is T10 zar")
+
+Added : $r1_inlined_18 = new T10
+
+Added : r2_inlined_18 = $r1_inlined_18
+
+Added : $r3_inlined_18 = new T10
+
+Added : r2_inlined_18.<T10: T10 f> = $r3_inlined_18
+
+Added : $r4_inlined_18 = r2_inlined_18.<T10: T10 f>
+
+Added : $r2 = $r4_inlined_18
+Added : goto [?= r1.<T10: T10 f> = $r2]
+--Done printing all the new units added to the caller body
+First unit of the callee body: $r0_inlined_18 = <java.lang.System: java.io.PrintStream out>
+
+
+
+
+
+-------------------------------------------- FUNCTION - <T10: T10 zar()>-------------------------------------------
+No loops found in method
+
+-------------------------------------------- FUNCTION - <T10: void main(java.lang.String[])>-------------------------------------------
+No loops found in method
+Inlining method: <T10: void foo(T10)> in method: <T10: void main(java.lang.String[])> at line: 40
+
+
+Printing all the new units added to the caller body: 
+
+
+Added : r3_inlined_40 = r1
+
+Added : $r0_inlined_40 = <java.lang.System: java.io.PrintStream out>
+
+Added : virtualinvoke $r0_inlined_40.<java.io.PrintStream: void println(java.lang.String)>("This is T10 foo")
+
+Added : $r1_inlined_40 = new T10
+
+Added : <T10: T10 global> = $r1_inlined_40
+
+Added : i0_inlined_40 = 0
+
+Added : if i0_inlined_40 >= 10 goto return
+
+Added : $r2_inlined_40 = <java.lang.System: java.io.PrintStream out>
+
+Added : virtualinvoke $r2_inlined_40.<java.io.PrintStream: void println(int)>(i0_inlined_40)
+
+Added : i0_inlined_40 = i0 + 1
+
+Added : goto [?= (branch)]
+
+Added : goto [?= r2 = staticinvoke <T10: T10 goo(T10)>(r1)]
+--Done printing all the new units added to the caller body
+First unit of the callee body: r3_inlined_40 = r1
+
+
+
+
+Inlining method: <T10: T10 goo(T10)> in method: <T10: void main(java.lang.String[])> at line: 41
+
+
+Printing all the new units added to the caller body: 
+
+
+Added : r7_inlined_41 = r1
+
+Added : $r0_inlined_41 = new T10
+
+Added : r1_inlined_41 = $r0_inlined_41
+
+Added : $r2_inlined_41 = $r4_inlined_18_inlined_41
+
+Added : goto [?= r1.<T10: T10 f> = $r2]
+
+Added : $r4_inlined_18_inlined_41 = r2_inlined_18_inlined_41.<T10: T10 f>
+
+Added : r2_inlined_18_inlined_41.<T10: T10 f> = $r3_inlined_18_inlined_41
+
+Added : $r3_inlined_18_inlined_41 = new T10
+
+Added : r2_inlined_18_inlined_41 = $r1_inlined_18_inlined_41
+
+Added : $r1_inlined_18_inlined_41 = new T10
+
+Added : virtualinvoke $r0_inlined_18_inlined_41.<java.io.PrintStream: void println(java.lang.String)>("This is T10 zar")
+
+Added : $r0_inlined_18_inlined_41 = <java.lang.System: java.io.PrintStream out>
+
+Added : r1_inlined_41.<T10: T10 f> = $r2_inlined_41
+
+Added : $r4_inlined_41 = r1_inlined_41.<T10: T10 f>
+
+Added : $r3_inlined_41 = new T10
+
+Added : $r4_inlined_41.<T10: T10 f> = $r3_inlined_41
+
+Added : $r5_inlined_41 = r1_inlined_41.<T10: T10 f>
+
+Added : if $r5_inlined_41 == null goto r1.<T10: int val> = 5
+
+Added : $r6_inlined_41 = <java.lang.System: java.io.PrintStream out>
+
+Added : virtualinvoke $r6_inlined_41.<java.io.PrintStream: void println(java.lang.String)>("temp.f is not null")
+
+Added : r1_inlined_41.<T10: int val> = 5
+
+Added : r2 = r1_inlined_41
+Added : goto [?= $r3 = new T10]
+--Done printing all the new units added to the caller body
+First unit of the callee body: r7_inlined_41 = r1
+
+
+
+
+
+-------------------------------------------- FUNCTION - <T10: void foo(T10)>-------------------------------------------
+Loops found in method: 1
+Loop: if i0 >= 10 goto return
+
+
+|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_Done with inlining_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|
+
+
+
+-------------------------------------------- FUNCTION - <T10: T10 goo(T10)>-------------------------------------------
+---------------Unit: r7 := @parameter0: T10 ---------------
+
+
+---------------Unit: $r0 = new T10 ---------------
+
+
+---------------Unit: specialinvoke $r0.<T10: void <init>()>() ---------------
+
+Edge count0
+Printing edge:
+SPECIAL edge: specialinvoke $r0.<T10: void <init>()>() in <T10: T10 goo(T10)> ==> <T10: void <init>()>
+Printing method withing edge:
+<T10: void <init>()>
+
+
+---------------Unit: r1 = $r0 ---------------
+
+
+---------------Unit: $r2 = $r4_inlined_18 ---------------
+
+
+---------------Unit: goto [?= r1.<T10: T10 f> = $r2] ---------------
+
+
+---------------Unit: $r4_inlined_18 = r2_inlined_18.<T10: T10 f> ---------------
+
+
+---------------Unit: r2_inlined_18.<T10: T10 f> = $r3_inlined_18 ---------------
+
+
+---------------Unit: $r3_inlined_18 = new T10 ---------------
+
+
+---------------Unit: r2_inlined_18 = $r1_inlined_18 ---------------
+
+
+---------------Unit: $r1_inlined_18 = new T10 ---------------
+
+
+---------------Unit: virtualinvoke $r0_inlined_18.<java.io.PrintStream: void println(java.lang.String)>("This is T10 zar") ---------------
+
+
+---------------Unit: $r0_inlined_18 = <java.lang.System: java.io.PrintStream out> ---------------
+
+
+---------------Unit: r1.<T10: T10 f> = $r2 ---------------
+
+
+---------------Unit: $r4 = r1.<T10: T10 f> ---------------
+
+
+---------------Unit: $r3 = new T10 ---------------
+
+
+---------------Unit: specialinvoke $r3.<T10: void <init>()>() ---------------
+
+Edge count0
+Printing edge:
+SPECIAL edge: specialinvoke $r3.<T10: void <init>()>() in <T10: T10 goo(T10)> ==> <T10: void <init>()>
+Printing method withing edge:
+<T10: void <init>()>
+
+
+---------------Unit: $r4.<T10: T10 f> = $r3 ---------------
+
+
+---------------Unit: $r5 = r1.<T10: T10 f> ---------------
+
+
+---------------Unit: if $r5 == null goto r1.<T10: int val> = 5 ---------------
+
+
+---------------Unit: $r6 = <java.lang.System: java.io.PrintStream out> ---------------
+
+Edge count0
+Printing edge:
+CLINIT edge: $r6 = <java.lang.System: java.io.PrintStream out> in <T10: T10 goo(T10)> ==> <java.lang.System: void <clinit>()>
+Printing method withing edge:
+<java.lang.System: void <clinit>()>
+
+Edge count1
+Printing edge:
+CLINIT edge: $r6 = <java.lang.System: java.io.PrintStream out> in <T10: T10 goo(T10)> ==> <java.lang.Object: void <clinit>()>
+Printing method withing edge:
+<java.lang.Object: void <clinit>()>
+
+
+---------------Unit: virtualinvoke $r6.<java.io.PrintStream: void println(java.lang.String)>("temp.f is not null") ---------------
+
+Edge count0
+Printing edge:
+VIRTUAL edge: virtualinvoke $r6.<java.io.PrintStream: void println(java.lang.String)>("temp.f is not null") in <T10: T10 goo(T10)> ==> <java.io.PrintStream: void println(java.lang.String)>
+Printing method withing edge:
+<java.io.PrintStream: void println(java.lang.String)>
+
+
+---------------Unit: r1.<T10: int val> = 5 ---------------
+
+
+---------------Unit: return r1 ---------------
+
+
+
+-------------------------------------------- FUNCTION - <T10: T10 zar()>-------------------------------------------
+---------------Unit: $r0 = <java.lang.System: java.io.PrintStream out> ---------------
+
+Edge count0
+Printing edge:
+CLINIT edge: $r0 = <java.lang.System: java.io.PrintStream out> in <T10: T10 zar()> ==> <java.lang.System: void <clinit>()>
+Printing method withing edge:
+<java.lang.System: void <clinit>()>
+
+Edge count1
+Printing edge:
+CLINIT edge: $r0 = <java.lang.System: java.io.PrintStream out> in <T10: T10 zar()> ==> <java.lang.Object: void <clinit>()>
+Printing method withing edge:
+<java.lang.Object: void <clinit>()>
+
+
+---------------Unit: virtualinvoke $r0.<java.io.PrintStream: void println(java.lang.String)>("This is T10 zar") ---------------
+
+Edge count0
+Printing edge:
+VIRTUAL edge: virtualinvoke $r0.<java.io.PrintStream: void println(java.lang.String)>("This is T10 zar") in <T10: T10 zar()> ==> <java.io.PrintStream: void println(java.lang.String)>
+Printing method withing edge:
+<java.io.PrintStream: void println(java.lang.String)>
+
+
+---------------Unit: $r1 = new T10 ---------------
+
+
+---------------Unit: specialinvoke $r1.<T10: void <init>()>() ---------------
+
+Edge count0
+Printing edge:
+SPECIAL edge: specialinvoke $r1.<T10: void <init>()>() in <T10: T10 zar()> ==> <T10: void <init>()>
+Printing method withing edge:
+<T10: void <init>()>
+
+
+---------------Unit: r2 = $r1 ---------------
+
+
+---------------Unit: $r3 = new T10 ---------------
+
+
+---------------Unit: specialinvoke $r3.<T10: void <init>()>() ---------------
+
+Edge count0
+Printing edge:
+SPECIAL edge: specialinvoke $r3.<T10: void <init>()>() in <T10: T10 zar()> ==> <T10: void <init>()>
+Printing method withing edge:
+<T10: void <init>()>
+
+
+---------------Unit: r2.<T10: T10 f> = $r3 ---------------
+
+
+---------------Unit: $r4 = r2.<T10: T10 f> ---------------
+
+
+---------------Unit: return $r4 ---------------
+
+
+
+-------------------------------------------- FUNCTION - <T10: void main(java.lang.String[])>-------------------------------------------
+---------------Unit: r4 := @parameter0: java.lang.String[] ---------------
+
+
+---------------Unit: $r0 = new T10 ---------------
+
+
+---------------Unit: specialinvoke $r0.<T10: void <init>()>() ---------------
+
+Edge count0
+Printing edge:
+SPECIAL edge: specialinvoke $r0.<T10: void <init>()>() in <T10: void main(java.lang.String[])> ==> <T10: void <init>()>
+Printing method withing edge:
+<T10: void <init>()>
+
+
+---------------Unit: r1 = $r0 ---------------
+
+
+---------------Unit: goto [?= r7_inlined_41 = r1] ---------------
+
+
+---------------Unit: goto [?= (branch)] ---------------
+
+
+---------------Unit: i0_inlined_40 = i0 + 1 ---------------
+
+
+---------------Unit: virtualinvoke $r2_inlined_40.<java.io.PrintStream: void println(int)>(i0_inlined_40) ---------------
+
+
+---------------Unit: $r2_inlined_40 = <java.lang.System: java.io.PrintStream out> ---------------
+
+
+---------------Unit: if i0_inlined_40 >= 10 goto (branch) ---------------
+
+
+---------------Unit: i0_inlined_40 = 0 ---------------
+
+
+---------------Unit: <T10: T10 global> = $r1_inlined_40 ---------------
+
+
+---------------Unit: $r1_inlined_40 = new T10 ---------------
+
+
+---------------Unit: virtualinvoke $r0_inlined_40.<java.io.PrintStream: void println(java.lang.String)>("This is T10 foo") ---------------
+
+
+---------------Unit: $r0_inlined_40 = <java.lang.System: java.io.PrintStream out> ---------------
+
+
+---------------Unit: r3_inlined_40 = r1 ---------------
+
+
+---------------Unit: r2 = r1_inlined_41 ---------------
+
+
+---------------Unit: goto [?= $r3 = new T10] ---------------
+
+
+---------------Unit: r1_inlined_41.<T10: int val> = 5 ---------------
+
+
+---------------Unit: virtualinvoke $r6_inlined_41.<java.io.PrintStream: void println(java.lang.String)>("temp.f is not null") ---------------
+
+
+---------------Unit: $r6_inlined_41 = <java.lang.System: java.io.PrintStream out> ---------------
+
+
+---------------Unit: if $r5_inlined_41 == null goto r1_inlined_41.<T10: int val> = 5 ---------------
+
+
+---------------Unit: $r5_inlined_41 = r1_inlined_41.<T10: T10 f> ---------------
+
+
+---------------Unit: $r4_inlined_41.<T10: T10 f> = $r3_inlined_41 ---------------
+
+
+---------------Unit: $r3_inlined_41 = new T10 ---------------
+
+
+---------------Unit: $r4_inlined_41 = r1_inlined_41.<T10: T10 f> ---------------
+
+
+---------------Unit: r1_inlined_41.<T10: T10 f> = $r2_inlined_41 ---------------
+
+
+---------------Unit: $r0_inlined_18_inlined_41 = <java.lang.System: java.io.PrintStream out> ---------------
+
+
+---------------Unit: virtualinvoke $r0_inlined_18_inlined_41.<java.io.PrintStream: void println(java.lang.String)>("This is T10 zar") ---------------
+
+
+---------------Unit: $r1_inlined_18_inlined_41 = new T10 ---------------
+
+
+---------------Unit: r2_inlined_18_inlined_41 = $r1_inlined_18_inlined_41 ---------------
+
+
+---------------Unit: $r3_inlined_18_inlined_41 = new T10 ---------------
+
+
+---------------Unit: r2_inlined_18_inlined_41.<T10: T10 f> = $r3_inlined_18_inlined_41 ---------------
+
+
+---------------Unit: $r4_inlined_18_inlined_41 = r2_inlined_18_inlined_41.<T10: T10 f> ---------------
+
+
+---------------Unit: goto [?= r1_inlined_41.<T10: T10 f> = $r2_inlined_41] ---------------
+
+
+---------------Unit: $r2_inlined_41 = $r4_inlined_18_inlined_41 ---------------
+
+
+---------------Unit: r1_inlined_41 = $r0_inlined_41 ---------------
+
+
+---------------Unit: $r0_inlined_41 = new T10 ---------------
+
+
+---------------Unit: r7_inlined_41 = r1 ---------------
+
+
+---------------Unit: $r3 = new T10 ---------------
+
+
+---------------Unit: specialinvoke $r3.<T10: void <init>()>() ---------------
+
+Edge count0
+Printing edge:
+SPECIAL edge: specialinvoke $r3.<T10: void <init>()>() in <T10: void main(java.lang.String[])> ==> <T10: void <init>()>
+Printing method withing edge:
+<T10: void <init>()>
+
+
+---------------Unit: r2.<T10: T10 f> = $r3 ---------------
+
+
+---------------Unit: return ---------------
+
+
+
+-------------------------------------------- FUNCTION - <T10: void foo(T10)>-------------------------------------------
+---------------Unit: r3 := @parameter0: T10 ---------------
+
+
+---------------Unit: $r0 = <java.lang.System: java.io.PrintStream out> ---------------
+
+Edge count0
+Printing edge:
+CLINIT edge: $r0 = <java.lang.System: java.io.PrintStream out> in <T10: void foo(T10)> ==> <java.lang.System: void <clinit>()>
+Printing method withing edge:
+<java.lang.System: void <clinit>()>
+
+Edge count1
+Printing edge:
+CLINIT edge: $r0 = <java.lang.System: java.io.PrintStream out> in <T10: void foo(T10)> ==> <java.lang.Object: void <clinit>()>
+Printing method withing edge:
+<java.lang.Object: void <clinit>()>
+
+
+---------------Unit: virtualinvoke $r0.<java.io.PrintStream: void println(java.lang.String)>("This is T10 foo") ---------------
+
+Edge count0
+Printing edge:
+VIRTUAL edge: virtualinvoke $r0.<java.io.PrintStream: void println(java.lang.String)>("This is T10 foo") in <T10: void foo(T10)> ==> <java.io.PrintStream: void println(java.lang.String)>
+Printing method withing edge:
+<java.io.PrintStream: void println(java.lang.String)>
+
+
+---------------Unit: $r1 = new T10 ---------------
+
+
+---------------Unit: specialinvoke $r1.<T10: void <init>()>() ---------------
+
+Edge count0
+Printing edge:
+SPECIAL edge: specialinvoke $r1.<T10: void <init>()>() in <T10: void foo(T10)> ==> <T10: void <init>()>
+Printing method withing edge:
+<T10: void <init>()>
+
+
+---------------Unit: <T10: T10 global> = $r1 ---------------
+
+
+---------------Unit: i0 = 0 ---------------
+
+
+---------------Unit: if i0 >= 10 goto return ---------------
+
+
+---------------Unit: $r2 = <java.lang.System: java.io.PrintStream out> ---------------
+
+
+---------------Unit: virtualinvoke $r2.<java.io.PrintStream: void println(int)>(i0) ---------------
+
+Edge count0
+Printing edge:
+VIRTUAL edge: virtualinvoke $r2.<java.io.PrintStream: void println(int)>(i0) in <T10: void foo(T10)> ==> <java.io.PrintStream: void println(int)>
+Printing method withing edge:
+<java.io.PrintStream: void println(int)>
+
+
+---------------Unit: i0 = i0 + 1 ---------------
+
+
+---------------Unit: goto [?= (branch)] ---------------
+
+
+---------------Unit: return ---------------
+
+
+Soot finished on Sun Apr 28 15:29:44 IST 2024
+Soot has run for 0 min. 14 sec.

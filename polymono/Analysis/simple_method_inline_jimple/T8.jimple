@@ -1,0 +1,169 @@
+public class T8 extends java.lang.Object
+{
+    public T8 f;
+    public int val;
+    public static T8 global;
+
+    public void <init>()
+    {
+        T8 r0;
+
+        r0 := @this: T8;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static void bar()
+    {
+        java.io.PrintStream $r0;
+
+        $r0 = <java.lang.System: java.io.PrintStream out>;
+
+        virtualinvoke $r0.<java.io.PrintStream: void println(java.lang.String)>("This is T8 bar");
+
+        return;
+    }
+
+    public void foo(T8, int)
+    {
+        T8 $r0, $r2, r5, r6;
+        java.io.PrintStream $r1, $r4;
+        int i0, i1;
+
+        r6 := @this: T8;
+
+        r5 := @parameter0: T8;
+
+        i0 := @parameter1: int;
+
+        $r0 = new T8;
+
+        specialinvoke $r0.<T8: void <init>()>();
+
+        r6.<T8: T8 f> = $r0;
+
+        $r1 = <java.lang.System: java.io.PrintStream out>;
+
+        virtualinvoke $r1.<java.io.PrintStream: void println(java.lang.String)>("This is T8 foo");
+
+        $r2 = new T8;
+
+        specialinvoke $r2.<T8: void <init>()>();
+
+        <T8: T8 global> = $r2;
+
+        staticinvoke <T8: void bar()>();
+
+        virtualinvoke r6.<T8: T8 zar()>();
+
+        i1 = 0;
+
+     label1:
+        if i1 >= 10 goto label2;
+
+        $r4 = <java.lang.System: java.io.PrintStream out>;
+
+        virtualinvoke $r4.<java.io.PrintStream: void println(int)>(i1);
+
+        i1 = i1 + 1;
+
+        goto label1;
+
+     label2:
+        return;
+    }
+
+    public T8 goo(T8, int)
+    {
+        T8 r0, $r1, $r2, $r3, $r4, r6, r7;
+        int i0;
+        java.io.PrintStream $r5;
+
+        r0 := @this: T8;
+
+        r6 := @parameter0: T8;
+
+        i0 := @parameter1: int;
+
+        r7 = new T8;
+
+        specialinvoke r7.<T8: void <init>()>();
+
+        $r1 = virtualinvoke r0.<T8: T8 zar()>();
+
+        r7.<T8: T8 f> = $r1;
+
+        $r3 = r7.<T8: T8 f>;
+
+        $r2 = new T8;
+
+        specialinvoke $r2.<T8: void <init>()>();
+
+        $r3.<T8: T8 f> = $r2;
+
+        $r4 = r7.<T8: T8 f>;
+
+        if $r4 == null goto label1;
+
+        $r5 = <java.lang.System: java.io.PrintStream out>;
+
+        virtualinvoke $r5.<java.io.PrintStream: void println(java.lang.String)>("temp.f is not null");
+
+     label1:
+        r7.<T8: int val> = i0;
+
+        return r7;
+    }
+
+    public static void main(java.lang.String[])
+    {
+        T8 $r0, $r1, r3;
+        java.lang.String[] r2;
+
+        r2 := @parameter0: java.lang.String[];
+
+        r3 = new T8;
+
+        specialinvoke r3.<T8: void <init>()>();
+
+        virtualinvoke r3.<T8: void foo(T8,int)>(r3, 10);
+
+        $r0 = virtualinvoke r3.<T8: T8 goo(T8,int)>(r3, 15);
+
+        $r1 = new T8;
+
+        specialinvoke $r1.<T8: void <init>()>();
+
+        $r0.<T8: T8 f> = $r1;
+
+        return;
+    }
+
+    public T8 zar()
+    {
+        java.io.PrintStream $r0;
+        T8 $r1, $r2, r3, r4;
+
+        r3 := @this: T8;
+
+        $r0 = <java.lang.System: java.io.PrintStream out>;
+
+        virtualinvoke $r0.<java.io.PrintStream: void println(java.lang.String)>("This is T8 zar");
+
+        r4 = new T8;
+
+        specialinvoke r4.<T8: void <init>()>();
+
+        $r1 = new T8;
+
+        specialinvoke $r1.<T8: void <init>()>();
+
+        r4.<T8: T8 f> = $r1;
+
+        $r2 = r4.<T8: T8 f>;
+
+        return $r2;
+    }
+}

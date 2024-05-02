@@ -1,0 +1,61 @@
+class T2_B extends T2_A
+{
+
+    void <init>()
+    {
+        T2_B r0;
+
+        r0 := @this: T2_B;
+
+        specialinvoke r0.<T2_A: void <init>()>();
+
+        return;
+    }
+
+    public static int bar(int)
+    {
+        int i0, $i1;
+
+        i0 := @parameter0: int;
+
+        $i1 = i0 + 1;
+
+        return $i1;
+    }
+
+    public int foo(int)
+    {
+        T2_B r0;
+        int i0, $i1, $i2, $i3, $i4, $i5;
+
+        r0 := @this: T2_B;
+
+        i0 := @parameter0: int;
+
+        $i1 = virtualinvoke r0.<T2_B: int zar(int)>(i0);
+
+        $i2 = staticinvoke <T2_B: int bar(int)>(i0);
+
+        $i3 = $i1 + $i2;
+
+        $i4 = $i3 + i0;
+
+        $i5 = $i4 + 3;
+
+        return $i5;
+    }
+
+    public int zar(int)
+    {
+        int i0, $i1;
+        T2_B r0;
+
+        r0 := @this: T2_B;
+
+        i0 := @parameter0: int;
+
+        $i1 = i0 - 1;
+
+        return $i1;
+    }
+}

@@ -1,0 +1,294 @@
+public class T9 extends java.lang.Object
+{
+    public T9 f;
+    public int val;
+    public static T9 global;
+
+    public void <init>()
+    {
+        T9 r0;
+
+        r0 := @this: T9;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static void bar()
+    {
+        java.io.PrintStream $r0;
+
+        $r0 = <java.lang.System: java.io.PrintStream out>;
+
+        virtualinvoke $r0.<java.io.PrintStream: void println(java.lang.String)>("This is T9 bar");
+
+        return;
+    }
+
+    public static void foo(T9, int)
+    {
+        java.io.PrintStream $r0, $r2, $r3, $r5;
+        T9 $r1, $r4, r6, r7, r8;
+        int i0, i1;
+
+        r6 := @parameter0: T9;
+
+        i0 := @parameter1: int;
+
+        $r0 = <java.lang.System: java.io.PrintStream out>;
+
+        virtualinvoke $r0.<java.io.PrintStream: void println(java.lang.String)>("This is T9 foo");
+
+        $r1 = new T9;
+
+        specialinvoke $r1.<T9: void <init>()>();
+
+        <T9: T9 global> = $r1;
+
+        $r2 = <java.lang.System: java.io.PrintStream out>;
+
+        virtualinvoke $r2.<java.io.PrintStream: void println(java.lang.String)>("This is T9 bar");
+
+        goto label1;
+
+     label1:
+        $r3 = <java.lang.System: java.io.PrintStream out>;
+
+        virtualinvoke $r3.<java.io.PrintStream: void println(java.lang.String)>("This is T9 zar");
+
+        r7 = new T9;
+
+        specialinvoke r7.<T9: void <init>()>();
+
+        $r4 = new T9;
+
+        specialinvoke $r4.<T9: void <init>()>();
+
+        r7.<T9: T9 f> = $r4;
+
+        r8 = r7.<T9: T9 f>;
+
+        goto label2;
+
+     label2:
+        i1 = 0;
+
+     label3:
+        if i1 >= 10 goto label4;
+
+        $r5 = <java.lang.System: java.io.PrintStream out>;
+
+        virtualinvoke $r5.<java.io.PrintStream: void println(int)>(i1);
+
+        i1 = i1 + 1;
+
+        goto label3;
+
+     label4:
+        return;
+    }
+
+    public static T9 goo(T9, int)
+    {
+        java.io.PrintStream $r0, $r5;
+        T9 $r1, $r2, $r3, $r4, r6, r7, r8, r9;
+        int i0;
+
+        r6 := @parameter0: T9;
+
+        i0 := @parameter1: int;
+
+        r7 = new T9;
+
+        specialinvoke r7.<T9: void <init>()>();
+
+        $r0 = <java.lang.System: java.io.PrintStream out>;
+
+        virtualinvoke $r0.<java.io.PrintStream: void println(java.lang.String)>("This is T9 zar");
+
+        r8 = new T9;
+
+        specialinvoke r8.<T9: void <init>()>();
+
+        $r1 = new T9;
+
+        specialinvoke $r1.<T9: void <init>()>();
+
+        r8.<T9: T9 f> = $r1;
+
+        r9 = r8.<T9: T9 f>;
+
+        goto label1;
+
+     label1:
+        r7.<T9: T9 f> = r9;
+
+        $r3 = r7.<T9: T9 f>;
+
+        $r2 = new T9;
+
+        specialinvoke $r2.<T9: void <init>()>();
+
+        $r3.<T9: T9 f> = $r2;
+
+        $r4 = r7.<T9: T9 f>;
+
+        if $r4 == null goto label2;
+
+        $r5 = <java.lang.System: java.io.PrintStream out>;
+
+        virtualinvoke $r5.<java.io.PrintStream: void println(java.lang.String)>("temp.f is not null");
+
+     label2:
+        r7.<T9: int val> = i0;
+
+        return r7;
+    }
+
+    public static void main(java.lang.String[])
+    {
+        T9 $r0, $r2, $r5, $r7, $r8, $r9, $r10, $r11, r15, r16, r17, r18, r19;
+        java.io.PrintStream $r1, $r3, $r4, $r6, $r12, $r13;
+        java.lang.String[] r14;
+        int i0;
+
+        r14 := @parameter0: java.lang.String[];
+
+        $r0 = new T9;
+
+        specialinvoke $r0.<T9: void <init>()>();
+
+        $r1 = <java.lang.System: java.io.PrintStream out>;
+
+        virtualinvoke $r1.<java.io.PrintStream: void println(java.lang.String)>("This is T9 foo");
+
+        $r2 = new T9;
+
+        specialinvoke $r2.<T9: void <init>()>();
+
+        <T9: T9 global> = $r2;
+
+        $r3 = <java.lang.System: java.io.PrintStream out>;
+
+        virtualinvoke $r3.<java.io.PrintStream: void println(java.lang.String)>("This is T9 bar");
+
+        goto label1;
+
+     label1:
+        $r4 = <java.lang.System: java.io.PrintStream out>;
+
+        virtualinvoke $r4.<java.io.PrintStream: void println(java.lang.String)>("This is T9 zar");
+
+        r15 = new T9;
+
+        specialinvoke r15.<T9: void <init>()>();
+
+        $r5 = new T9;
+
+        specialinvoke $r5.<T9: void <init>()>();
+
+        r15.<T9: T9 f> = $r5;
+
+        r16 = r15.<T9: T9 f>;
+
+        goto label2;
+
+     label2:
+        i0 = 0;
+
+     label3:
+        if i0 >= 10 goto label4;
+
+        $r13 = <java.lang.System: java.io.PrintStream out>;
+
+        virtualinvoke $r13.<java.io.PrintStream: void println(int)>(i0);
+
+        i0 = i0 + 1;
+
+        goto label3;
+
+     label4:
+        goto label5;
+
+     label5:
+        r17 = new T9;
+
+        specialinvoke r17.<T9: void <init>()>();
+
+        $r6 = <java.lang.System: java.io.PrintStream out>;
+
+        virtualinvoke $r6.<java.io.PrintStream: void println(java.lang.String)>("This is T9 zar");
+
+        r18 = new T9;
+
+        specialinvoke r18.<T9: void <init>()>();
+
+        $r7 = new T9;
+
+        specialinvoke $r7.<T9: void <init>()>();
+
+        r18.<T9: T9 f> = $r7;
+
+        r19 = r18.<T9: T9 f>;
+
+        goto label6;
+
+     label6:
+        r17.<T9: T9 f> = r19;
+
+        $r9 = r17.<T9: T9 f>;
+
+        $r8 = new T9;
+
+        specialinvoke $r8.<T9: void <init>()>();
+
+        $r9.<T9: T9 f> = $r8;
+
+        $r10 = r17.<T9: T9 f>;
+
+        if $r10 == null goto label7;
+
+        $r12 = <java.lang.System: java.io.PrintStream out>;
+
+        virtualinvoke $r12.<java.io.PrintStream: void println(java.lang.String)>("temp.f is not null");
+
+     label7:
+        r17.<T9: int val> = 15;
+
+        goto label8;
+
+     label8:
+        $r11 = new T9;
+
+        specialinvoke $r11.<T9: void <init>()>();
+
+        r17.<T9: T9 f> = $r11;
+
+        return;
+    }
+
+    public static T9 zar()
+    {
+        java.io.PrintStream $r0;
+        T9 r1, $r2, $r3;
+
+        $r0 = <java.lang.System: java.io.PrintStream out>;
+
+        virtualinvoke $r0.<java.io.PrintStream: void println(java.lang.String)>("This is T9 zar");
+
+        r1 = new T9;
+
+        specialinvoke r1.<T9: void <init>()>();
+
+        $r2 = new T9;
+
+        specialinvoke $r2.<T9: void <init>()>();
+
+        r1.<T9: T9 f> = $r2;
+
+        $r3 = r1.<T9: T9 f>;
+
+        return $r3;
+    }
+}

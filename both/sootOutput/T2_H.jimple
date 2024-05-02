@@ -1,0 +1,32 @@
+class T2_H extends java.lang.Object
+{
+
+    void <init>()
+    {
+        T2_H r0;
+
+        r0 := @this: T2_H;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public T2_H foo()
+    {
+        java.io.PrintStream $r0;
+        T2_H $r1, r2;
+
+        r2 := @this: T2_H;
+
+        $r0 = <java.lang.System: java.io.PrintStream out>;
+
+        virtualinvoke $r0.<java.io.PrintStream: void println(java.lang.String)>("This is T2_H foo");
+
+        $r1 = new T2_H;
+
+        specialinvoke $r1.<T2_H: void <init>()>();
+
+        return $r1;
+    }
+}

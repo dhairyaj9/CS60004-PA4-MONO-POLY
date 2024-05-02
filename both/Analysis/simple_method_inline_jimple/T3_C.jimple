@@ -1,0 +1,41 @@
+class T3_C extends T3_A
+{
+    public T3_A a3;
+
+    void <init>()
+    {
+        T3_C r0;
+
+        r0 := @this: T3_C;
+
+        specialinvoke r0.<T3_A: void <init>()>();
+
+        return;
+    }
+
+    public T3_A foo(T3_A)
+    {
+        T3_C $r0, $r3, r5;
+        T3_A r2, r4;
+
+        r5 := @this: T3_C;
+
+        r2 := @parameter0: T3_A;
+
+        $r0 = new T3_C;
+
+        specialinvoke $r0.<T3_C: void <init>()>();
+
+        r2.<T3_A: T3_A a1> = $r0;
+
+        $r3 = new T3_C;
+
+        specialinvoke $r3.<T3_C: void <init>()>();
+
+        $r0.<T3_C: T3_A a3> = $r3;
+
+        r4 = $r0.<T3_C: T3_A a3>;
+
+        return r4;
+    }
+}

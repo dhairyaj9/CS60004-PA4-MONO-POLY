@@ -1,0 +1,76 @@
+public class T7 extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        T7 r0;
+
+        r0 := @this: T7;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public void foo()
+    {
+        java.io.PrintStream $r0;
+        T7 r1;
+
+        r1 := @this: T7;
+
+        $r0 = <java.lang.System: java.io.PrintStream out>;
+
+        virtualinvoke $r0.<java.io.PrintStream: void println(java.lang.String)>("This is T7 foo");
+
+        return;
+    }
+
+    public static void main(java.lang.String[])
+    {
+        Node r0, $r4, r6;
+        java.io.PrintStream $r1, $r2, $r3;
+        int $i0, $i1, $i2;
+        java.lang.String[] r5;
+
+        r5 := @parameter0: java.lang.String[];
+
+        r0 = new Node;
+
+        specialinvoke r0.<Node: void <init>()>();
+
+        virtualinvoke r0.<Node: void foo()>();
+
+        virtualinvoke r0.<Node: void setVal(int)>(10);
+
+        $r1 = <java.lang.System: java.io.PrintStream out>;
+
+        $i0 = virtualinvoke r0.<Node: int getVal()>();
+
+        virtualinvoke $r1.<java.io.PrintStream: void println(int)>($i0);
+
+        r6 = new Node;
+
+        specialinvoke r6.<Node: void <init>()>();
+
+        virtualinvoke r6.<Node: void setVal(int)>(20);
+
+        $r2 = <java.lang.System: java.io.PrintStream out>;
+
+        $i1 = virtualinvoke r6.<Node: int getVal()>();
+
+        virtualinvoke $r2.<java.io.PrintStream: void println(int)>($i1);
+
+        virtualinvoke r0.<Node: void setF(Node)>(r6);
+
+        $r3 = <java.lang.System: java.io.PrintStream out>;
+
+        $r4 = virtualinvoke r0.<Node: Node getF()>();
+
+        $i2 = virtualinvoke $r4.<Node: int getVal()>();
+
+        virtualinvoke $r3.<java.io.PrintStream: void println(int)>($i2);
+
+        return;
+    }
+}

@@ -1,0 +1,316 @@
+public class Test5 extends java.lang.Object
+{
+/*Test5.java*/
+
+    public void <init>()
+    {
+        Test5 r0;
+
+        r0 := @this: Test5;
+/*Live Variable: r0*/
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static void main(java.lang.String[])
+    {
+        Test5 $r0;
+        Node5 $r1, $r3, $r4, $r5, r6, $r8, $r9, $r10, r11, $r12, r13;
+        java.lang.String[] r14;
+        int i1, i2, i3;
+
+        r14 := @parameter0: java.lang.String[];
+
+        $r0 = new Test5;
+/*Live Variable: $r0*/
+
+        specialinvoke $r0.<Test5: void <init>()>();
+/*Live Variable: $r0*/
+
+        $r1 = new Node5;
+/*Live Variable: $r1*/
+/*Live Variable: $r0*/
+
+        specialinvoke $r1.<Node5: void <init>()>();
+/*Live Variable: $r1*/
+/*Live Variable: $r0*/
+
+        $r3 = new Node5;
+/*Live Variable: $r1*/
+/*Live Variable: $r0*/
+/*Live Variable: $r3*/
+
+        specialinvoke $r3.<Node5: void <init>()>();
+/*Live Variable: $r1*/
+/*Live Variable: $r0*/
+/*Live Variable: $r3*/
+
+        $r1.<Node5: Node5 f> = $r3;
+/*Live Variable: $r1*/
+/*Live Variable: $r0*/
+
+        $r5 = $r1.<Node5: Node5 f>;
+/*Live Variable: $r1*/
+/*Live Variable: $r0*/
+/*Live Variable: $r5*/
+
+        $r4 = new Node5;
+/*Live Variable: $r1*/
+/*Live Variable: $r0*/
+/*Live Variable: $r5*/
+/*Live Variable: $r4*/
+
+        specialinvoke $r4.<Node5: void <init>()>();
+/*Live Variable: $r1*/
+/*Live Variable: $r0*/
+/*Live Variable: $r5*/
+/*Live Variable: $r4*/
+
+        $r5.<Node5: Node5 f> = $r4;
+/*Live Variable: $r1*/
+/*Live Variable: $r0*/
+
+        i1 = 1 + 1;
+/*Live Variable: $r1*/
+/*Live Variable: $r0*/
+/*Live Variable: i1*/
+
+        staticinvoke <Test5: void foo3()>();
+/*Live Variable: $r1*/
+/*Live Variable: $r0*/
+/*Live Variable: i1*/
+
+        i2 = i1 + 1;
+/*Live Variable: $r1*/
+/*Live Variable: i2*/
+/*Live Variable: $r0*/
+
+        r6 = staticinvoke <Test5: Node5 foo4()>();
+/*Live Variable: $r1*/
+/*Live Variable: r6*/
+/*Live Variable: $r0*/
+/*Live Variable: i2*/
+
+        virtualinvoke $r0.<Test5: Node5 foo2(Node5)>($r1);
+/*Live Variable: $r1*/
+/*Live Variable: r6*/
+/*Live Variable: $r0*/
+/*Live Variable: i2*/
+
+        i3 = i2 + 1;
+/*Live Variable: $r1*/
+/*Live Variable: r6*/
+/*Live Variable: $r0*/
+/*Live Variable: i3*/
+
+        $r10 = $r1.<Node5: Node5 f>;
+/*Live Variable: $r1*/
+/*Live Variable: r6*/
+/*Live Variable: $r10*/
+/*Live Variable: i3*/
+/*Live Variable: $r0*/
+
+        $r8 = $r1.<Node5: Node5 f>;
+/*Live Variable: $r1*/
+/*Live Variable: r6*/
+/*Live Variable: $r10*/
+/*Live Variable: i3*/
+/*Live Variable: $r0*/
+/*Live Variable: $r8*/
+
+        $r9 = $r8.<Node5: Node5 f>;
+/*Live Variable: $r1*/
+/*Live Variable: r6*/
+/*Live Variable: $r10*/
+/*Live Variable: i3*/
+/*Live Variable: $r9*/
+/*Live Variable: $r0*/
+
+        virtualinvoke $r0.<Test5: Test5 foo1(Node5,Node5,int,Node5)>($r1, $r10, i3, $r9);
+/*Live Variable: $r1*/
+/*Live Variable: r6*/
+
+        r11 = r6.<Node5: Node5 f>;
+/*Live Variable: $r1*/
+
+        $r12 = $r1.<Node5: Node5 f>;
+/*Live Variable: $r12*/
+
+        r13 = $r12.<Node5: Node5 f>;
+
+        return;
+    }
+
+    public Test5 foo1(Node5, Node5, int, Node5)
+    {
+        Test5 r0;
+        Node5 r1, $r2, $r3, $r4, $r5, r7, r8;
+        int i0, i2;
+
+        r0 := @this: Test5;
+/*Live Variable: r0*/
+
+        r1 := @parameter0: Node5;
+/*Live Variable: r0*/
+/*Live Variable: r1*/
+
+        r7 := @parameter1: Node5;
+/*Live Variable: r0*/
+/*Live Variable: r1*/
+
+        i0 := @parameter2: int;
+/*Live Variable: r0*/
+/*Live Variable: r1*/
+
+        r8 := @parameter3: Node5;
+/*Live Variable: r0*/
+/*Live Variable: r1*/
+
+        i2 = 0 + 1;
+/*Live Variable: r0*/
+/*Live Variable: i2*/
+/*Live Variable: r1*/
+
+     label1:
+        if i2 >= 100000 goto label2;
+/*Live Variable: r0*/
+/*Live Variable: i2*/
+/*Live Variable: r1*/
+
+        $r2 = r1.<Node5: Node5 f>;
+/*Live Variable: r0*/
+/*Live Variable: i2*/
+/*Live Variable: r1*/
+/*Live Variable: $r2*/
+
+        $r5 = $r2.<Node5: Node5 f>;
+/*Live Variable: r0*/
+/*Live Variable: i2*/
+/*Live Variable: r1*/
+/*Live Variable: $r5*/
+
+        $r3 = r1.<Node5: Node5 f>;
+/*Live Variable: r0*/
+/*Live Variable: i2*/
+/*Live Variable: r1*/
+/*Live Variable: $r5*/
+/*Live Variable: $r3*/
+
+        $r4 = $r3.<Node5: Node5 f>;
+/*Live Variable: r0*/
+/*Live Variable: i2*/
+/*Live Variable: r1*/
+/*Live Variable: $r5*/
+/*Live Variable: $r4*/
+
+        $r5.<Node5: Node5 f> = $r4;
+/*Live Variable: r0*/
+/*Live Variable: i2*/
+/*Live Variable: r1*/
+
+        r1.<Node5: Node5 f> = r1;
+/*Live Variable: r0*/
+/*Live Variable: i2*/
+/*Live Variable: r1*/
+
+        virtualinvoke r0.<Test5: Node5 foo2(Node5)>(r1);
+/*Live Variable: r0*/
+/*Live Variable: i2*/
+/*Live Variable: r1*/
+
+        goto label1;
+/*Live Variable: r0*/
+/*Live Variable: i2*/
+/*Live Variable: r1*/
+
+     label2:
+        return r0;
+    }
+
+    public Node5 foo2(Node5)
+    {
+        Test5 r0;
+        Node5 r1;
+        int i1;
+
+        r0 := @this: Test5;
+
+        r1 := @parameter0: Node5;
+/*Live Variable: r1*/
+
+        i1 = 0 + 1;
+/*Live Variable: r1*/
+/*Live Variable: i1*/
+
+     label1:
+        if i1 >= 100000 goto label2;
+/*Live Variable: r1*/
+/*Live Variable: i1*/
+
+        r1 = r1.<Node5: Node5 f>;
+/*Live Variable: r1*/
+/*Live Variable: i1*/
+
+        goto label1;
+/*Live Variable: r1*/
+/*Live Variable: i1*/
+
+     label2:
+        return r1;
+    }
+
+    public static void foo3()
+    {
+        Node5 $r0;
+
+        $r0 = new Node5;
+/*Live Variable: $r0*/
+
+        specialinvoke $r0.<Node5: void <init>()>();
+
+        return;
+    }
+
+    public static Node5 foo4()
+    {
+        Node5 $r0, $r2, $r3, $r4;
+
+        $r0 = new Node5;
+/*Live Variable: $r0*/
+
+        specialinvoke $r0.<Node5: void <init>()>();
+/*Live Variable: $r0*/
+
+        $r2 = new Node5;
+/*Live Variable: $r0*/
+/*Live Variable: $r2*/
+
+        specialinvoke $r2.<Node5: void <init>()>();
+/*Live Variable: $r0*/
+/*Live Variable: $r2*/
+
+        $r0.<Node5: Node5 f> = $r2;
+/*Live Variable: $r0*/
+
+        $r4 = $r0.<Node5: Node5 f>;
+/*Live Variable: $r0*/
+/*Live Variable: $r4*/
+
+        $r3 = new Node5;
+/*Live Variable: $r0*/
+/*Live Variable: $r4*/
+/*Live Variable: $r3*/
+
+        specialinvoke $r3.<Node5: void <init>()>();
+/*Live Variable: $r0*/
+/*Live Variable: $r4*/
+/*Live Variable: $r3*/
+
+        $r4.<Node5: Node5 f> = $r3;
+/*Live Variable: $r0*/
+
+        return $r0;
+    }
+}

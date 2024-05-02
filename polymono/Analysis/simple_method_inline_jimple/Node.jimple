@@ -1,0 +1,151 @@
+class Node extends java.lang.Object
+{
+    public Node f;
+    public int val;
+    public static Node global;
+
+    void <init>()
+    {
+        Node r0;
+
+        r0 := @this: Node;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static void bar()
+    {
+        java.io.PrintStream $r0;
+        T7 $r1;
+        Node $r2;
+
+        $r0 = <java.lang.System: java.io.PrintStream out>;
+
+        virtualinvoke $r0.<java.io.PrintStream: void println(java.lang.String)>("This is Node bar");
+
+        $r1 = new T7;
+
+        specialinvoke $r1.<T7: void <init>()>();
+
+        virtualinvoke $r1.<T7: void foo()>();
+
+        $r2 = new Node;
+
+        specialinvoke $r2.<Node: void <init>()>();
+
+        virtualinvoke $r2.<Node: void zar()>();
+
+        return;
+    }
+
+    public void foo()
+    {
+        Node $r0, $r2, r4;
+        java.io.PrintStream $r1, $r3;
+        int i0;
+
+        r4 := @this: Node;
+
+        $r0 = new Node;
+
+        specialinvoke $r0.<Node: void <init>()>();
+
+        r4.<Node: Node f> = $r0;
+
+        $r1 = <java.lang.System: java.io.PrintStream out>;
+
+        virtualinvoke $r1.<java.io.PrintStream: void println(java.lang.String)>("This is Node foo");
+
+        $r2 = new Node;
+
+        specialinvoke $r2.<Node: void <init>()>();
+
+        <Node: Node global> = $r2;
+
+        staticinvoke <Node: void bar()>();
+
+        virtualinvoke r4.<Node: void zar()>();
+
+        i0 = 0;
+
+     label1:
+        if i0 >= 10 goto label2;
+
+        $r3 = <java.lang.System: java.io.PrintStream out>;
+
+        virtualinvoke $r3.<java.io.PrintStream: void println(int)>(i0);
+
+        i0 = i0 + 1;
+
+        goto label1;
+
+     label2:
+        return;
+    }
+
+    public Node getF()
+    {
+        Node r0, $r1;
+
+        r0 := @this: Node;
+
+        $r1 = r0.<Node: Node f>;
+
+        return $r1;
+    }
+
+    public int getVal()
+    {
+        Node r0;
+        int $i0;
+
+        r0 := @this: Node;
+
+        $i0 = r0.<Node: int val>;
+
+        return $i0;
+    }
+
+    public void setF(Node)
+    {
+        Node r0, r1;
+
+        r0 := @this: Node;
+
+        r1 := @parameter0: Node;
+
+        r0.<Node: Node f> = r1;
+
+        return;
+    }
+
+    public void setVal(int)
+    {
+        Node r0;
+        int i0;
+
+        r0 := @this: Node;
+
+        i0 := @parameter0: int;
+
+        r0.<Node: int val> = i0;
+
+        return;
+    }
+
+    public void zar()
+    {
+        java.io.PrintStream $r0;
+        Node r1;
+
+        r1 := @this: Node;
+
+        $r0 = <java.lang.System: java.io.PrintStream out>;
+
+        virtualinvoke $r0.<java.io.PrintStream: void println(java.lang.String)>("This is Node zar");
+
+        return;
+    }
+}

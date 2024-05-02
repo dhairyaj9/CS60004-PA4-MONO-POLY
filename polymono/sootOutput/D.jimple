@@ -1,0 +1,99 @@
+class D extends B
+{
+
+    void <init>()
+    {
+        D r0;
+
+        r0 := @this: D;
+
+        specialinvoke r0.<B: void <init>()>();
+
+        return;
+    }
+
+    public void foo()
+    {
+        java.io.PrintStream $r0;
+        D r1;
+
+        r1 := @this: D;
+
+        $r0 = <java.lang.System: java.io.PrintStream out>;
+
+        virtualinvoke $r0.<java.io.PrintStream: void println(java.lang.String)>("This is D foo");
+
+        staticinvoke <D: void zar_static(D)>(r1);
+
+        staticinvoke <D: void bar()>();
+
+        return;
+    }
+
+    public static void bar()
+    {
+        java.io.PrintStream $r0;
+
+        $r0 = <java.lang.System: java.io.PrintStream out>;
+
+        virtualinvoke $r0.<java.io.PrintStream: void println(java.lang.String)>("This is D bar");
+
+        return;
+    }
+
+    public void zar()
+    {
+        java.io.PrintStream $r0;
+        D r1;
+
+        r1 := @this: D;
+
+        $r0 = <java.lang.System: java.io.PrintStream out>;
+
+        virtualinvoke $r0.<java.io.PrintStream: void println(java.lang.String)>("This is D zar");
+
+        return;
+    }
+
+    static void zar_static(D)
+    {
+        java.io.PrintStream $r0;
+        D r1;
+
+        r1 := @parameter0: D;
+
+        $r0 = <java.lang.System: java.io.PrintStream out>;
+
+        virtualinvoke $r0.<java.io.PrintStream: void println(java.lang.String)>("This is D zar");
+
+        return;
+    }
+
+    static void foo_static(D)
+    {
+        java.io.PrintStream $r0, $r0_inlined_35, $r0_inlined_36;
+        D r1;
+
+        r1 := @parameter0: D;
+
+        $r0 = <java.lang.System: java.io.PrintStream out>;
+
+        virtualinvoke $r0.<java.io.PrintStream: void println(java.lang.String)>("This is D foo");
+
+        $r0_inlined_35 = <java.lang.System: java.io.PrintStream out>;
+
+        virtualinvoke $r0_inlined_35.<java.io.PrintStream: void println(java.lang.String)>("This is D zar");
+
+        goto label1;
+
+     label1:
+        $r0_inlined_36 = <java.lang.System: java.io.PrintStream out>;
+
+        virtualinvoke $r0_inlined_36.<java.io.PrintStream: void println(java.lang.String)>("This is D bar");
+
+        goto label2;
+
+     label2:
+        return;
+    }
+}

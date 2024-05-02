@@ -1,0 +1,52 @@
+Compiled from "T3.java"
+public class T3 extends Animal {
+  int carnivore;
+
+  public T3(int, int);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: invokespecial #12                 // Method Animal."<init>":(I)V
+       5: aload_0
+       6: iload_2
+       7: putfield      #14                 // Field carnivore:I
+      10: return
+
+  public int getlegs();
+    Code:
+       0: aload_0
+       1: invokespecial #18                 // Method Animal.getlegs:()I
+       4: ireturn
+
+  public static void main(java.lang.String[]);
+    Code:
+       0: new           #2                  // class T3
+       3: astore_1
+       4: aload_1
+       5: iconst_4
+       6: iconst_1
+       7: invokespecial #22                 // Method "<init>":(II)V
+      10: aload_1
+      11: invokevirtual #23                 // Method getlegs:()I
+      14: istore_0
+      15: aload_1
+      16: iconst_3
+      17: invokevirtual #26                 // Method new_leg:(I)V
+      20: aload_1
+      21: invokevirtual #23                 // Method getlegs:()I
+      24: istore_1
+      25: getstatic     #32                 // Field java/lang/System.out:Ljava/io/PrintStream;
+      28: iload_0
+      29: invokevirtual #37                 // Method java/io/PrintStream.println:(I)V
+      32: getstatic     #32                 // Field java/lang/System.out:Ljava/io/PrintStream;
+      35: iload_1
+      36: invokevirtual #37                 // Method java/io/PrintStream.println:(I)V
+      39: return
+
+  public void new_leg(int);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: putfield      #40                 // Field legs:I
+       5: return
+}

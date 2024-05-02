@@ -1,0 +1,42 @@
+class A extends java.lang.Object
+{
+
+    void <init>()
+    {
+        A r0;
+
+        r0 := @this: A;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public void foo()
+    {
+        java.io.PrintStream $r0;
+        A r1;
+
+        r1 := @this: A;
+
+        $r0 = <java.lang.System: java.io.PrintStream out>;
+
+        virtualinvoke $r0.<java.io.PrintStream: void println(java.lang.String)>("This is A foo");
+
+        return;
+    }
+
+    static void foo_static(A)
+    {
+        java.io.PrintStream $r0;
+        A r1;
+
+        r1 := @parameter0: A;
+
+        $r0 = <java.lang.System: java.io.PrintStream out>;
+
+        virtualinvoke $r0.<java.io.PrintStream: void println(java.lang.String)>("This is A foo");
+
+        return;
+    }
+}

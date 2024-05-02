@@ -1,0 +1,57 @@
+class B extends A
+{
+
+    void <init>()
+    {
+        B r0;
+
+        r0 := @this: B;
+
+        specialinvoke r0.<A: void <init>()>();
+
+        return;
+    }
+
+    public void foo()
+    {
+        java.io.PrintStream $r0;
+        B r1;
+
+        r1 := @this: B;
+
+        $r0 = <java.lang.System: java.io.PrintStream out>;
+
+        virtualinvoke $r0.<java.io.PrintStream: void println(java.lang.String)>("This is B foo");
+
+        virtualinvoke r1.<B: void zar()>();
+
+        staticinvoke <B: void bar()>();
+
+        return;
+    }
+
+    public static void bar()
+    {
+        java.io.PrintStream $r0;
+
+        $r0 = <java.lang.System: java.io.PrintStream out>;
+
+        virtualinvoke $r0.<java.io.PrintStream: void println(java.lang.String)>("This is B bar");
+
+        return;
+    }
+
+    public void zar()
+    {
+        java.io.PrintStream $r0;
+        B r1;
+
+        r1 := @this: B;
+
+        $r0 = <java.lang.System: java.io.PrintStream out>;
+
+        virtualinvoke $r0.<java.io.PrintStream: void println(java.lang.String)>("This is B zar");
+
+        return;
+    }
+}

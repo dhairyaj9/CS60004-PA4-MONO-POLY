@@ -1,0 +1,115 @@
+Soot started on Thu May 02 17:08:37 IST 2024
+Soot finished on Thu May 02 17:08:37 IST 2024
+Soot has run for 0 min. 0 sec.
+
+
+retrieving static data from normal class file
+
+Soot started on Thu May 02 17:08:37 IST 2024
+PA4.cgtype   Stats starts %%%%%%%%%
+virtual_edges: 17
+static_edges: 3
+virtual_invokes: 9
+static_invokes: 3
+poly_invokes: 4
+mono_invokes: 8
+total_invokes: 12
+Stats ends %%%%%%%%%%%%%%%%%%%%%%%%
+Soot finished on Thu May 02 17:08:46 IST 2024
+Soot has run for 0 min. 8 sec.
+Soot started on Thu May 02 17:08:46 IST 2024
+PA4.cgtype   Stats starts %%%%%%%%%
+virtual_edges: 11
+static_edges: 3
+virtual_invokes: 9
+static_invokes: 3
+poly_invokes: 2
+mono_invokes: 10
+total_invokes: 12
+Stats ends %%%%%%%%%%%%%%%%%%%%%%%%
+Soot finished on Thu May 02 17:08:56 IST 2024
+Soot has run for 0 min. 10 sec.
+
+
+poly to mono transformation on class file
+
+Soot started on Thu May 02 17:08:56 IST 2024
+Stats ends %%%%%%%%%%%%%%%%%%%%%%%%
+Soot finished on Thu May 02 17:09:07 IST 2024
+Soot has run for 0 min. 10 sec.
+
+
+retrieving static data from PolytoMono transformed class file
+
+Soot started on Thu May 02 17:09:07 IST 2024
+PA4.cgtype   Stats starts %%%%%%%%%
+virtual_edges: 8
+static_edges: 13
+virtual_invokes: 3
+static_invokes: 13
+poly_invokes: 3
+mono_invokes: 13
+total_invokes: 16
+Stats ends %%%%%%%%%%%%%%%%%%%%%%%%
+Soot finished on Thu May 02 17:09:15 IST 2024
+Soot has run for 0 min. 8 sec.
+Soot started on Thu May 02 17:09:15 IST 2024
+PA4.cgtype   Stats starts %%%%%%%%%
+virtual_edges: 5
+static_edges: 11
+virtual_invokes: 3
+static_invokes: 11
+poly_invokes: 2
+mono_invokes: 12
+total_invokes: 14
+Stats ends %%%%%%%%%%%%%%%%%%%%%%%%
+Soot finished on Thu May 02 17:09:26 IST 2024
+Soot has run for 0 min. 10 sec.
+
+
+PolyToMono SUCCESS
+Soot started on Thu May 02 17:09:26 IST 2024
+Soot finished on Thu May 02 17:09:27 IST 2024
+Soot has run for 0 min. 0 sec.
+Soot started on Thu May 02 17:09:27 IST 2024
+Poly to Mono ends %%%%%%%%%%%%%%%%%%%%%%%
+Soot finished on Thu May 02 17:09:38 IST 2024
+Soot has run for 0 min. 10 sec.
+Soot started on Thu May 02 17:09:38 IST 2024
+Poly to Mono ends %%%%%%%%%%%%%%%%%%%%%%%
+Soot finished on Thu May 02 17:09:48 IST 2024
+Soot has run for 0 min. 9 sec.
+
+
+SUCCESS
+
+
+retrieving static data from PolytoMono + MethodInline transformed class file
+
+Soot started on Thu May 02 17:09:48 IST 2024
+PA4.cgtype   Stats starts %%%%%%%%%
+virtual_edges: 8
+static_edges: 3
+virtual_invokes: 3
+static_invokes: 3
+poly_invokes: 3
+mono_invokes: 3
+total_invokes: 6
+Stats ends %%%%%%%%%%%%%%%%%%%%%%%%
+Soot finished on Thu May 02 17:09:56 IST 2024
+Soot has run for 0 min. 7 sec.
+Soot started on Thu May 02 17:09:56 IST 2024
+PA4.cgtype   Stats starts %%%%%%%%%
+virtual_edges: 5
+static_edges: 1
+virtual_invokes: 3
+static_invokes: 1
+poly_invokes: 2
+mono_invokes: 2
+total_invokes: 4
+Stats ends %%%%%%%%%%%%%%%%%%%%%%%%
+Soot finished on Thu May 02 17:10:06 IST 2024
+Soot has run for 0 min. 10 sec.
+
+
+PolyToMono SUCCESS

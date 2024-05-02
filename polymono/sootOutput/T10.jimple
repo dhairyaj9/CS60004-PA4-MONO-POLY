@@ -1,0 +1,118 @@
+public class T10 extends java.lang.Object
+{
+    public T10 f;
+    public int val;
+    public static T10 global;
+
+    public void <init>()
+    {
+        T10 r0;
+
+        r0 := @this: T10;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static void foo(T10)
+    {
+        java.io.PrintStream $r0, $r5, $r6;
+        T10 r1, $r2, $r3, $r4;
+        int i0;
+
+        r1 := @parameter0: T10;
+
+        $r0 = <java.lang.System: java.io.PrintStream out>;
+
+        virtualinvoke $r0.<java.io.PrintStream: void println(java.lang.String)>("This is T10 foo");
+
+        <T10: T10 global> = r1;
+
+        i0 = 0;
+
+     label1:
+        if i0 >= 10 goto label3;
+
+        $r4 = r1.<T10: T10 f>;
+
+        if $r4 == null goto label2;
+
+        $r6 = <java.lang.System: java.io.PrintStream out>;
+
+        virtualinvoke $r6.<java.io.PrintStream: void println(java.lang.String)>("temp is not null");
+
+     label2:
+        $r5 = <java.lang.System: java.io.PrintStream out>;
+
+        virtualinvoke $r5.<java.io.PrintStream: void println(int)>(i0);
+
+        i0 = i0 + 1;
+
+        goto label1;
+
+     label3:
+        $r2 = staticinvoke <T10: T10 goo(T10)>(r1);
+
+        $r3 = new T10;
+
+        specialinvoke $r3.<T10: void <init>()>();
+
+        $r2.<T10: T10 f> = $r3;
+
+        return;
+    }
+
+    public static T10 goo(T10)
+    {
+        T10 $r0, $r1, r3, r4;
+        java.io.PrintStream $r2;
+
+        r3 := @parameter0: T10;
+
+        r4 = new T10;
+
+        specialinvoke r4.<T10: void <init>()>();
+
+        $r0 = new T10;
+
+        specialinvoke $r0.<T10: void <init>()>();
+
+        r4.<T10: T10 f> = $r0;
+
+        $r1 = r4.<T10: T10 f>;
+
+        if $r1 == null goto label1;
+
+        $r2 = <java.lang.System: java.io.PrintStream out>;
+
+        virtualinvoke $r2.<java.io.PrintStream: void println(java.lang.String)>("temp.f is not null");
+
+     label1:
+        r4.<T10: int val> = 5;
+
+        return r4;
+    }
+
+    public static void main(java.lang.String[])
+    {
+        T10 $r0, r2;
+        java.lang.String[] r1;
+
+        r1 := @parameter0: java.lang.String[];
+
+        r2 = new T10;
+
+        specialinvoke r2.<T10: void <init>()>();
+
+        $r0 = new T10;
+
+        specialinvoke $r0.<T10: void <init>()>();
+
+        r2.<T10: T10 f> = $r0;
+
+        staticinvoke <T10: void foo(T10)>(r2);
+
+        return;
+    }
+}
