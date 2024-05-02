@@ -26,4 +26,18 @@ class T1_A extends java.lang.Object
 
         return $i1;
     }
+
+    static int zar_static(int, T1_A)
+    {
+        int i0, $i1;
+        T1_A r0;
+
+        i0 := @parameter0: int;
+
+        r0 := @parameter1: T1_A;
+
+        $i1 = i0 * 3;
+
+        return $i1;
+    }
 }

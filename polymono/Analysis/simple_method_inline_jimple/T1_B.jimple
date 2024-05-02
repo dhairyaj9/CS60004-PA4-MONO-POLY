@@ -13,453 +13,453 @@ class T1_B extends T1_A
         return;
     }
 
+    public static int bar(int)
+    {
+        T1_A r0;
+        int i0, $i1, $i2, $i3, $i4, $i5, $i6, $i7, $i8, $i9, $i10, $i11, $i12, $i13, $i14, $i15, $i16, $i17, $i18, $i19, $i20, $i21, $i22, $i23, $i24, $i25, $i26, $i27, $i28, $i29, $i30, $i31, $i32, $i33, $i34, $i35, $i36, $i37, $i38, $i39, $i40, $i41, $i42, $i43, $i44, $i45, $i46, $i47, $i48, $i49, $i50, $i51, $i52, $i53, $i54, $i55, $i56, $i57, $i58, $i59, $i60, $i61, $i62, $i63, $i64, $i65, $i66, $i67, $i68, $i69, $i70, $i71, $i72, $i73, $i74, $i75, $i76, $i77, $i78, $i79, $i80, $i81, $i82, $i83, $i84, $i85, $i86, $i87, $i88, $i89, $i90, $i91, $i92, $i93, $i94, $i95, $i96, $i97, $i98, $i99, $i100, $i101;
+
+        i0 := @parameter0: int;
+
+        r0 = new T1_A;
+
+        specialinvoke r0.<T1_A: void <init>()>();
+
+        $i1 = i0 + 1;
+
+        $i2 = staticinvoke <T1_A: int zar_static(int,T1_A)>($i1, r0);
+
+        $i3 = $i2 + 2;
+
+        $i4 = staticinvoke <T1_A: int zar_static(int,T1_A)>($i3, r0);
+
+        $i5 = $i4 + 3;
+
+        $i6 = staticinvoke <T1_A: int zar_static(int,T1_A)>($i5, r0);
+
+        $i7 = $i6 + 4;
+
+        $i8 = staticinvoke <T1_A: int zar_static(int,T1_A)>($i7, r0);
+
+        $i9 = $i8 + 5;
+
+        $i10 = staticinvoke <T1_A: int zar_static(int,T1_A)>($i9, r0);
+
+        $i11 = $i10 + 6;
+
+        $i12 = staticinvoke <T1_A: int zar_static(int,T1_A)>($i11, r0);
+
+        $i13 = $i12 + 7;
+
+        $i14 = staticinvoke <T1_A: int zar_static(int,T1_A)>($i13, r0);
+
+        $i15 = $i14 + 8;
+
+        $i16 = staticinvoke <T1_A: int zar_static(int,T1_A)>($i15, r0);
+
+        $i17 = $i16 + 9;
+
+        $i18 = staticinvoke <T1_A: int zar_static(int,T1_A)>($i17, r0);
+
+        $i19 = $i18 + 10;
+
+        $i20 = staticinvoke <T1_A: int zar_static(int,T1_A)>($i19, r0);
+
+        $i21 = $i20 + 11;
+
+        $i22 = staticinvoke <T1_A: int zar_static(int,T1_A)>($i21, r0);
+
+        $i23 = $i22 + 12;
+
+        $i24 = staticinvoke <T1_A: int zar_static(int,T1_A)>($i23, r0);
+
+        $i25 = $i24 + 13;
+
+        $i26 = staticinvoke <T1_A: int zar_static(int,T1_A)>($i25, r0);
+
+        $i27 = $i26 + 14;
+
+        $i28 = staticinvoke <T1_A: int zar_static(int,T1_A)>($i27, r0);
+
+        $i29 = $i28 + 15;
+
+        $i30 = staticinvoke <T1_A: int zar_static(int,T1_A)>($i29, r0);
+
+        $i31 = $i30 + 16;
+
+        $i32 = staticinvoke <T1_A: int zar_static(int,T1_A)>($i31, r0);
+
+        $i33 = $i32 + 17;
+
+        $i34 = staticinvoke <T1_A: int zar_static(int,T1_A)>($i33, r0);
+
+        $i35 = $i34 + 18;
+
+        $i36 = staticinvoke <T1_A: int zar_static(int,T1_A)>($i35, r0);
+
+        $i37 = $i36 + 19;
+
+        $i38 = staticinvoke <T1_A: int zar_static(int,T1_A)>($i37, r0);
+
+        $i39 = $i38 + 20;
+
+        $i40 = staticinvoke <T1_A: int zar_static(int,T1_A)>($i39, r0);
+
+        $i41 = $i40 + 21;
+
+        $i42 = staticinvoke <T1_A: int zar_static(int,T1_A)>($i41, r0);
+
+        $i43 = $i42 + 22;
+
+        $i44 = staticinvoke <T1_A: int zar_static(int,T1_A)>($i43, r0);
+
+        $i45 = $i44 + 23;
+
+        $i46 = staticinvoke <T1_A: int zar_static(int,T1_A)>($i45, r0);
+
+        $i47 = $i46 + 24;
+
+        $i48 = staticinvoke <T1_A: int zar_static(int,T1_A)>($i47, r0);
+
+        $i49 = $i48 + 25;
+
+        $i50 = staticinvoke <T1_A: int zar_static(int,T1_A)>($i49, r0);
+
+        $i51 = $i50 + 26;
+
+        $i52 = staticinvoke <T1_A: int zar_static(int,T1_A)>($i51, r0);
+
+        $i53 = $i52 + 27;
+
+        $i54 = staticinvoke <T1_A: int zar_static(int,T1_A)>($i53, r0);
+
+        $i55 = $i54 + 28;
+
+        $i56 = staticinvoke <T1_A: int zar_static(int,T1_A)>($i55, r0);
+
+        $i57 = $i56 + 29;
+
+        $i58 = staticinvoke <T1_A: int zar_static(int,T1_A)>($i57, r0);
+
+        $i59 = $i58 + 30;
+
+        $i60 = staticinvoke <T1_A: int zar_static(int,T1_A)>($i59, r0);
+
+        $i61 = $i60 + 31;
+
+        $i62 = staticinvoke <T1_A: int zar_static(int,T1_A)>($i61, r0);
+
+        $i63 = $i62 + 32;
+
+        $i64 = staticinvoke <T1_A: int zar_static(int,T1_A)>($i63, r0);
+
+        $i65 = $i64 + 33;
+
+        $i66 = staticinvoke <T1_A: int zar_static(int,T1_A)>($i65, r0);
+
+        $i67 = $i66 + 34;
+
+        $i68 = staticinvoke <T1_A: int zar_static(int,T1_A)>($i67, r0);
+
+        $i69 = $i68 + 35;
+
+        $i70 = staticinvoke <T1_A: int zar_static(int,T1_A)>($i69, r0);
+
+        $i71 = $i70 + 36;
+
+        $i72 = staticinvoke <T1_A: int zar_static(int,T1_A)>($i71, r0);
+
+        $i73 = $i72 + 37;
+
+        $i74 = staticinvoke <T1_A: int zar_static(int,T1_A)>($i73, r0);
+
+        $i75 = $i74 + 38;
+
+        $i76 = staticinvoke <T1_A: int zar_static(int,T1_A)>($i75, r0);
+
+        $i77 = $i76 + 39;
+
+        $i78 = staticinvoke <T1_A: int zar_static(int,T1_A)>($i77, r0);
+
+        $i79 = $i78 + 40;
+
+        $i80 = staticinvoke <T1_A: int zar_static(int,T1_A)>($i79, r0);
+
+        $i81 = $i80 + 41;
+
+        $i82 = staticinvoke <T1_A: int zar_static(int,T1_A)>($i81, r0);
+
+        $i83 = $i82 + 42;
+
+        $i84 = staticinvoke <T1_A: int zar_static(int,T1_A)>($i83, r0);
+
+        $i85 = $i84 + 43;
+
+        $i86 = staticinvoke <T1_A: int zar_static(int,T1_A)>($i85, r0);
+
+        $i87 = $i86 + 44;
+
+        $i88 = staticinvoke <T1_A: int zar_static(int,T1_A)>($i87, r0);
+
+        $i89 = $i88 + 45;
+
+        $i90 = staticinvoke <T1_A: int zar_static(int,T1_A)>($i89, r0);
+
+        $i91 = $i90 + 46;
+
+        $i92 = staticinvoke <T1_A: int zar_static(int,T1_A)>($i91, r0);
+
+        $i93 = $i92 + 47;
+
+        $i94 = staticinvoke <T1_A: int zar_static(int,T1_A)>($i93, r0);
+
+        $i95 = $i94 + 48;
+
+        $i96 = staticinvoke <T1_A: int zar_static(int,T1_A)>($i95, r0);
+
+        $i97 = $i96 + 49;
+
+        $i98 = staticinvoke <T1_A: int zar_static(int,T1_A)>($i97, r0);
+
+        $i99 = $i98 + 50;
+
+        $i100 = staticinvoke <T1_A: int zar_static(int,T1_A)>($i99, r0);
+
+        $i101 = $i100 + 1;
+
+        return $i101;
+    }
+
     public T1_A foo(T1_A)
     {
-        T1_D $r0;
-        T1_A r2, r6;
-        T1_C $r3;
-        int $i0, $i1, $i2, $i3, $i4, $i5, $i6, $i7, $i8, $i9, $i10, $i11, $i12, $i13, $i14, $i15, $i16, $i17, $i18, $i19, $i20, $i21, $i22, $i23, $i24, $i25, $i26, $i27, $i28, $i29, $i30, $i31, $i32, $i33, $i34, $i35, $i36, $i37, $i38, $i39, $i40, $i41, $i42, $i43, $i44, $i45, $i46, $i47, $i48, $i49, i51, i52, i53, i54, i55, i56, i57, i58, i59, i60, i61, i62, i63, i64, i65, i66, i67, i68, i69, i70, i71, i72, i73, i74, i75, i76, i77, i78, i79, i80, i81, i82, i83, i84, i85, i86, i87, i88, i89, i90, i91, i92, i93, i94, i95, i96, i97, i98, i99;
-        T1_B $r5, r7;
+        int $i0, $i1, $i2, $i3, $i4, $i5, $i6, $i7, $i8, $i9, $i10, $i11, $i12, $i13, $i14, $i15, $i16, $i17, $i18, $i19, $i20, $i21, $i22, $i23, $i24, $i25, $i26, $i27, $i28, $i29, $i30, $i31, $i32, $i33, $i34, $i35, $i36, $i37, $i38, $i39, $i40, $i41, $i42, $i43, $i44, $i45, $i46, $i47, $i48, $i49, $i50, $i51, $i52, $i53, $i54, $i55, $i56, $i57, $i58, $i59, $i60, $i61, $i62, $i63, $i64, $i65, $i66, $i67, $i68, $i69, $i70, $i71, $i72, $i73, $i74, $i75, $i76, $i77, $i78, $i79, $i80, $i81, $i82, $i83, $i84, $i85, $i86, $i87, $i88, $i89, $i90, $i91, $i92, $i93, $i94, $i95, $i96, $i97, $i98;
+        T1_B $r0, r2;
+        T1_A $r1, r3;
+        T1_D r4;
+        T1_C r5;
 
-        r7 := @this: T1_B;
+        r2 := @this: T1_B;
 
-        r2 := @parameter0: T1_A;
+        r3 := @parameter0: T1_A;
 
-        $r0 = new T1_D;
+        r4 = new T1_D;
 
-        specialinvoke $r0.<T1_D: void <init>()>();
+        specialinvoke r4.<T1_D: void <init>()>();
 
-        r2.<T1_A: T1_A a1> = $r0;
+        r3.<T1_A: T1_A a1> = r4;
 
-        $r3 = new T1_C;
+        r5 = new T1_C;
 
-        specialinvoke $r3.<T1_C: void <init>()>();
+        specialinvoke r5.<T1_C: void <init>()>();
 
         $i0 = 0 + 1;
 
-        i51 = virtualinvoke $r3.<T1_A: int zar(int)>($i0);
+        $i1 = virtualinvoke r5.<T1_A: int zar(int)>($i0);
 
-        $i1 = i51 + 2;
+        $i2 = $i1 + 2;
 
-        i52 = virtualinvoke $r3.<T1_A: int zar(int)>($i1);
+        $i3 = virtualinvoke r5.<T1_A: int zar(int)>($i2);
 
-        $i2 = i52 + 3;
+        $i4 = $i3 + 3;
 
-        i53 = virtualinvoke $r3.<T1_A: int zar(int)>($i2);
+        $i5 = virtualinvoke r5.<T1_A: int zar(int)>($i4);
 
-        $i3 = i53 + 4;
+        $i6 = $i5 + 4;
 
-        i54 = virtualinvoke $r3.<T1_A: int zar(int)>($i3);
+        $i7 = virtualinvoke r5.<T1_A: int zar(int)>($i6);
 
-        $i4 = i54 + 5;
+        $i8 = $i7 + 5;
 
-        i55 = virtualinvoke $r3.<T1_A: int zar(int)>($i4);
+        $i9 = virtualinvoke r5.<T1_A: int zar(int)>($i8);
 
-        $i5 = i55 + 6;
+        $i10 = $i9 + 6;
 
-        i56 = virtualinvoke $r3.<T1_A: int zar(int)>($i5);
+        $i11 = virtualinvoke r5.<T1_A: int zar(int)>($i10);
 
-        $i6 = i56 + 7;
+        $i12 = $i11 + 7;
 
-        i57 = virtualinvoke $r3.<T1_A: int zar(int)>($i6);
+        $i13 = virtualinvoke r5.<T1_A: int zar(int)>($i12);
 
-        $i7 = i57 + 8;
+        $i14 = $i13 + 8;
 
-        i58 = virtualinvoke $r3.<T1_A: int zar(int)>($i7);
+        $i15 = virtualinvoke r5.<T1_A: int zar(int)>($i14);
 
-        $i8 = i58 + 9;
+        $i16 = $i15 + 9;
 
-        i59 = virtualinvoke $r3.<T1_A: int zar(int)>($i8);
+        $i17 = virtualinvoke r5.<T1_A: int zar(int)>($i16);
 
-        $i9 = i59 + 10;
+        $i18 = $i17 + 10;
 
-        i60 = virtualinvoke $r3.<T1_A: int zar(int)>($i9);
+        $i19 = virtualinvoke r5.<T1_A: int zar(int)>($i18);
 
-        $i10 = i60 + 11;
+        $i20 = $i19 + 11;
 
-        i61 = virtualinvoke $r3.<T1_A: int zar(int)>($i10);
+        $i21 = virtualinvoke r5.<T1_A: int zar(int)>($i20);
 
-        $i11 = i61 + 12;
+        $i22 = $i21 + 12;
 
-        i62 = virtualinvoke $r3.<T1_A: int zar(int)>($i11);
+        $i23 = virtualinvoke r5.<T1_A: int zar(int)>($i22);
 
-        $i12 = i62 + 13;
+        $i24 = $i23 + 13;
 
-        i63 = virtualinvoke $r3.<T1_A: int zar(int)>($i12);
+        $i25 = virtualinvoke r5.<T1_A: int zar(int)>($i24);
 
-        $i13 = i63 + 14;
+        $i26 = $i25 + 14;
 
-        i64 = virtualinvoke $r3.<T1_A: int zar(int)>($i13);
+        $i27 = virtualinvoke r5.<T1_A: int zar(int)>($i26);
 
-        $i14 = i64 + 15;
+        $i28 = $i27 + 15;
 
-        i65 = virtualinvoke $r3.<T1_A: int zar(int)>($i14);
+        $i29 = virtualinvoke r5.<T1_A: int zar(int)>($i28);
 
-        $i15 = i65 + 16;
+        $i30 = $i29 + 16;
 
-        i66 = virtualinvoke $r3.<T1_A: int zar(int)>($i15);
+        $i31 = virtualinvoke r5.<T1_A: int zar(int)>($i30);
 
-        $i16 = i66 + 17;
+        $i32 = $i31 + 17;
 
-        i67 = virtualinvoke $r3.<T1_A: int zar(int)>($i16);
+        $i33 = virtualinvoke r5.<T1_A: int zar(int)>($i32);
 
-        $i17 = i67 + 18;
+        $i34 = $i33 + 18;
 
-        i68 = virtualinvoke $r3.<T1_A: int zar(int)>($i17);
+        $i35 = virtualinvoke r5.<T1_A: int zar(int)>($i34);
 
-        $i18 = i68 + 19;
+        $i36 = $i35 + 19;
 
-        i69 = virtualinvoke $r3.<T1_A: int zar(int)>($i18);
+        $i37 = virtualinvoke r5.<T1_A: int zar(int)>($i36);
 
-        $i19 = i69 + 20;
+        $i38 = $i37 + 20;
 
-        i70 = virtualinvoke $r3.<T1_A: int zar(int)>($i19);
+        $i39 = virtualinvoke r5.<T1_A: int zar(int)>($i38);
 
-        $i20 = i70 + 21;
+        $i40 = $i39 + 21;
 
-        i71 = virtualinvoke $r3.<T1_A: int zar(int)>($i20);
+        $i41 = virtualinvoke r5.<T1_A: int zar(int)>($i40);
 
-        $i21 = i71 + 22;
+        $i42 = $i41 + 22;
 
-        i72 = virtualinvoke $r3.<T1_A: int zar(int)>($i21);
+        $i43 = virtualinvoke r5.<T1_A: int zar(int)>($i42);
 
-        $i22 = i72 + 23;
+        $i44 = $i43 + 23;
 
-        i73 = virtualinvoke $r3.<T1_A: int zar(int)>($i22);
+        $i45 = virtualinvoke r5.<T1_A: int zar(int)>($i44);
 
-        $i23 = i73 + 24;
+        $i46 = $i45 + 24;
 
-        i74 = virtualinvoke $r3.<T1_A: int zar(int)>($i23);
+        $i47 = virtualinvoke r5.<T1_A: int zar(int)>($i46);
 
-        $i24 = i74 + 25;
+        $i48 = $i47 + 25;
 
-        i75 = virtualinvoke $r3.<T1_A: int zar(int)>($i24);
+        $i49 = virtualinvoke r5.<T1_A: int zar(int)>($i48);
 
-        $i25 = i75 + 26;
+        $i50 = $i49 + 26;
 
-        i76 = virtualinvoke $r3.<T1_A: int zar(int)>($i25);
+        $i51 = virtualinvoke r5.<T1_A: int zar(int)>($i50);
 
-        $i26 = i76 + 27;
+        $i52 = $i51 + 27;
 
-        i77 = virtualinvoke $r3.<T1_A: int zar(int)>($i26);
+        $i53 = virtualinvoke r5.<T1_A: int zar(int)>($i52);
 
-        $i27 = i77 + 28;
+        $i54 = $i53 + 28;
 
-        i78 = virtualinvoke $r3.<T1_A: int zar(int)>($i27);
+        $i55 = virtualinvoke r5.<T1_A: int zar(int)>($i54);
 
-        $i28 = i78 + 29;
+        $i56 = $i55 + 29;
 
-        i79 = virtualinvoke $r3.<T1_A: int zar(int)>($i28);
+        $i57 = virtualinvoke r5.<T1_A: int zar(int)>($i56);
 
-        $i29 = i79 + 30;
+        $i58 = $i57 + 30;
 
-        i80 = virtualinvoke $r3.<T1_A: int zar(int)>($i29);
+        $i59 = virtualinvoke r5.<T1_A: int zar(int)>($i58);
 
-        $i30 = i80 + 31;
+        $i60 = $i59 + 31;
 
-        i81 = virtualinvoke $r3.<T1_A: int zar(int)>($i30);
+        $i61 = virtualinvoke r5.<T1_A: int zar(int)>($i60);
 
-        $i31 = i81 + 32;
+        $i62 = $i61 + 32;
 
-        i82 = virtualinvoke $r3.<T1_A: int zar(int)>($i31);
+        $i63 = virtualinvoke r5.<T1_A: int zar(int)>($i62);
 
-        $i32 = i82 + 33;
+        $i64 = $i63 + 33;
 
-        i83 = virtualinvoke $r3.<T1_A: int zar(int)>($i32);
+        $i65 = virtualinvoke r5.<T1_A: int zar(int)>($i64);
 
-        $i33 = i83 + 34;
+        $i66 = $i65 + 34;
 
-        i84 = virtualinvoke $r3.<T1_A: int zar(int)>($i33);
+        $i67 = virtualinvoke r5.<T1_A: int zar(int)>($i66);
 
-        $i34 = i84 + 35;
+        $i68 = $i67 + 35;
 
-        i85 = virtualinvoke $r3.<T1_A: int zar(int)>($i34);
+        $i69 = virtualinvoke r5.<T1_A: int zar(int)>($i68);
 
-        $i35 = i85 + 36;
+        $i70 = $i69 + 36;
 
-        i86 = virtualinvoke $r3.<T1_A: int zar(int)>($i35);
+        $i71 = virtualinvoke r5.<T1_A: int zar(int)>($i70);
 
-        $i36 = i86 + 37;
+        $i72 = $i71 + 37;
 
-        i87 = virtualinvoke $r3.<T1_A: int zar(int)>($i36);
+        $i73 = virtualinvoke r5.<T1_A: int zar(int)>($i72);
 
-        $i37 = i87 + 38;
+        $i74 = $i73 + 38;
 
-        i88 = virtualinvoke $r3.<T1_A: int zar(int)>($i37);
+        $i75 = virtualinvoke r5.<T1_A: int zar(int)>($i74);
 
-        $i38 = i88 + 39;
+        $i76 = $i75 + 39;
 
-        i89 = virtualinvoke $r3.<T1_A: int zar(int)>($i38);
+        $i77 = virtualinvoke r5.<T1_A: int zar(int)>($i76);
 
-        $i39 = i89 + 40;
+        $i78 = $i77 + 40;
 
-        i90 = virtualinvoke $r3.<T1_A: int zar(int)>($i39);
+        $i79 = virtualinvoke r5.<T1_A: int zar(int)>($i78);
 
-        $i40 = i90 + 41;
+        $i80 = $i79 + 41;
 
-        i91 = virtualinvoke $r3.<T1_A: int zar(int)>($i40);
+        $i81 = virtualinvoke r5.<T1_A: int zar(int)>($i80);
 
-        $i41 = i91 + 42;
+        $i82 = $i81 + 42;
 
-        i92 = virtualinvoke $r3.<T1_A: int zar(int)>($i41);
+        $i83 = virtualinvoke r5.<T1_A: int zar(int)>($i82);
 
-        $i42 = i92 + 43;
+        $i84 = $i83 + 43;
 
-        i93 = virtualinvoke $r3.<T1_A: int zar(int)>($i42);
+        $i85 = virtualinvoke r5.<T1_A: int zar(int)>($i84);
 
-        $i43 = i93 + 44;
+        $i86 = $i85 + 44;
 
-        i94 = virtualinvoke $r3.<T1_A: int zar(int)>($i43);
+        $i87 = virtualinvoke r5.<T1_A: int zar(int)>($i86);
 
-        $i44 = i94 + 45;
+        $i88 = $i87 + 45;
 
-        i95 = virtualinvoke $r3.<T1_A: int zar(int)>($i44);
+        $i89 = virtualinvoke r5.<T1_A: int zar(int)>($i88);
 
-        $i45 = i95 + 46;
+        $i90 = $i89 + 46;
 
-        i96 = virtualinvoke $r3.<T1_A: int zar(int)>($i45);
+        $i91 = virtualinvoke r5.<T1_A: int zar(int)>($i90);
 
-        $i46 = i96 + 47;
+        $i92 = $i91 + 47;
 
-        i97 = virtualinvoke $r3.<T1_A: int zar(int)>($i46);
+        $i93 = virtualinvoke r5.<T1_A: int zar(int)>($i92);
 
-        $i47 = i97 + 48;
+        $i94 = $i93 + 48;
 
-        i98 = virtualinvoke $r3.<T1_A: int zar(int)>($i47);
+        $i95 = virtualinvoke r5.<T1_A: int zar(int)>($i94);
 
-        $i48 = i98 + 49;
+        $i96 = $i95 + 49;
 
-        i99 = virtualinvoke $r3.<T1_A: int zar(int)>($i48);
+        $i97 = virtualinvoke r5.<T1_A: int zar(int)>($i96);
 
-        $i49 = i99 + 50;
+        $i98 = $i97 + 50;
 
-        virtualinvoke $r3.<T1_A: int zar(int)>($i49);
+        virtualinvoke r5.<T1_A: int zar(int)>($i98);
 
-        $r5 = new T1_B;
+        $r0 = new T1_B;
 
-        specialinvoke $r5.<T1_B: void <init>()>();
+        specialinvoke $r0.<T1_B: void <init>()>();
 
-        $r0.<T1_B: T1_A a2> = $r5;
+        r4.<T1_B: T1_A a2> = $r0;
 
-        r6 = $r0.<T1_B: T1_A a2>;
+        $r1 = r4.<T1_B: T1_A a2>;
 
-        return r6;
-    }
-
-    public static int bar(int)
-    {
-        T1_A $r0;
-        int $i0, $i1, $i2, $i3, $i4, $i5, $i6, $i7, $i8, $i9, $i10, $i11, $i12, $i13, $i14, $i15, $i16, $i17, $i18, $i19, $i20, $i21, $i22, $i23, $i24, $i25, $i26, $i27, $i28, $i29, $i30, $i31, $i32, $i33, $i34, $i35, $i36, $i37, $i38, $i39, $i40, $i41, $i42, $i43, $i44, $i45, $i46, $i47, $i48, $i49, $i50, i51, i52, i53, i54, i55, i56, i57, i58, i59, i60, i61, i62, i63, i64, i65, i66, i67, i68, i69, i70, i71, i72, i73, i74, i75, i76, i77, i78, i79, i80, i81, i82, i83, i84, i85, i86, i87, i88, i89, i90, i91, i92, i93, i94, i95, i96, i97, i98, i99, i100, i101;
-
-        i51 := @parameter0: int;
-
-        $r0 = new T1_A;
-
-        specialinvoke $r0.<T1_A: void <init>()>();
-
-        $i0 = i51 + 1;
-
-        i52 = virtualinvoke $r0.<T1_A: int zar(int)>($i0);
-
-        $i1 = i52 + 2;
-
-        i53 = virtualinvoke $r0.<T1_A: int zar(int)>($i1);
-
-        $i2 = i53 + 3;
-
-        i54 = virtualinvoke $r0.<T1_A: int zar(int)>($i2);
-
-        $i3 = i54 + 4;
-
-        i55 = virtualinvoke $r0.<T1_A: int zar(int)>($i3);
-
-        $i4 = i55 + 5;
-
-        i56 = virtualinvoke $r0.<T1_A: int zar(int)>($i4);
-
-        $i5 = i56 + 6;
-
-        i57 = virtualinvoke $r0.<T1_A: int zar(int)>($i5);
-
-        $i6 = i57 + 7;
-
-        i58 = virtualinvoke $r0.<T1_A: int zar(int)>($i6);
-
-        $i7 = i58 + 8;
-
-        i59 = virtualinvoke $r0.<T1_A: int zar(int)>($i7);
-
-        $i8 = i59 + 9;
-
-        i60 = virtualinvoke $r0.<T1_A: int zar(int)>($i8);
-
-        $i9 = i60 + 10;
-
-        i61 = virtualinvoke $r0.<T1_A: int zar(int)>($i9);
-
-        $i10 = i61 + 11;
-
-        i62 = virtualinvoke $r0.<T1_A: int zar(int)>($i10);
-
-        $i11 = i62 + 12;
-
-        i63 = virtualinvoke $r0.<T1_A: int zar(int)>($i11);
-
-        $i12 = i63 + 13;
-
-        i64 = virtualinvoke $r0.<T1_A: int zar(int)>($i12);
-
-        $i13 = i64 + 14;
-
-        i65 = virtualinvoke $r0.<T1_A: int zar(int)>($i13);
-
-        $i14 = i65 + 15;
-
-        i66 = virtualinvoke $r0.<T1_A: int zar(int)>($i14);
-
-        $i15 = i66 + 16;
-
-        i67 = virtualinvoke $r0.<T1_A: int zar(int)>($i15);
-
-        $i16 = i67 + 17;
-
-        i68 = virtualinvoke $r0.<T1_A: int zar(int)>($i16);
-
-        $i17 = i68 + 18;
-
-        i69 = virtualinvoke $r0.<T1_A: int zar(int)>($i17);
-
-        $i18 = i69 + 19;
-
-        i70 = virtualinvoke $r0.<T1_A: int zar(int)>($i18);
-
-        $i19 = i70 + 20;
-
-        i71 = virtualinvoke $r0.<T1_A: int zar(int)>($i19);
-
-        $i20 = i71 + 21;
-
-        i72 = virtualinvoke $r0.<T1_A: int zar(int)>($i20);
-
-        $i21 = i72 + 22;
-
-        i73 = virtualinvoke $r0.<T1_A: int zar(int)>($i21);
-
-        $i22 = i73 + 23;
-
-        i74 = virtualinvoke $r0.<T1_A: int zar(int)>($i22);
-
-        $i23 = i74 + 24;
-
-        i75 = virtualinvoke $r0.<T1_A: int zar(int)>($i23);
-
-        $i24 = i75 + 25;
-
-        i76 = virtualinvoke $r0.<T1_A: int zar(int)>($i24);
-
-        $i25 = i76 + 26;
-
-        i77 = virtualinvoke $r0.<T1_A: int zar(int)>($i25);
-
-        $i26 = i77 + 27;
-
-        i78 = virtualinvoke $r0.<T1_A: int zar(int)>($i26);
-
-        $i27 = i78 + 28;
-
-        i79 = virtualinvoke $r0.<T1_A: int zar(int)>($i27);
-
-        $i28 = i79 + 29;
-
-        i80 = virtualinvoke $r0.<T1_A: int zar(int)>($i28);
-
-        $i29 = i80 + 30;
-
-        i81 = virtualinvoke $r0.<T1_A: int zar(int)>($i29);
-
-        $i30 = i81 + 31;
-
-        i82 = virtualinvoke $r0.<T1_A: int zar(int)>($i30);
-
-        $i31 = i82 + 32;
-
-        i83 = virtualinvoke $r0.<T1_A: int zar(int)>($i31);
-
-        $i32 = i83 + 33;
-
-        i84 = virtualinvoke $r0.<T1_A: int zar(int)>($i32);
-
-        $i33 = i84 + 34;
-
-        i85 = virtualinvoke $r0.<T1_A: int zar(int)>($i33);
-
-        $i34 = i85 + 35;
-
-        i86 = virtualinvoke $r0.<T1_A: int zar(int)>($i34);
-
-        $i35 = i86 + 36;
-
-        i87 = virtualinvoke $r0.<T1_A: int zar(int)>($i35);
-
-        $i36 = i87 + 37;
-
-        i88 = virtualinvoke $r0.<T1_A: int zar(int)>($i36);
-
-        $i37 = i88 + 38;
-
-        i89 = virtualinvoke $r0.<T1_A: int zar(int)>($i37);
-
-        $i38 = i89 + 39;
-
-        i90 = virtualinvoke $r0.<T1_A: int zar(int)>($i38);
-
-        $i39 = i90 + 40;
-
-        i91 = virtualinvoke $r0.<T1_A: int zar(int)>($i39);
-
-        $i40 = i91 + 41;
-
-        i92 = virtualinvoke $r0.<T1_A: int zar(int)>($i40);
-
-        $i41 = i92 + 42;
-
-        i93 = virtualinvoke $r0.<T1_A: int zar(int)>($i41);
-
-        $i42 = i93 + 43;
-
-        i94 = virtualinvoke $r0.<T1_A: int zar(int)>($i42);
-
-        $i43 = i94 + 44;
-
-        i95 = virtualinvoke $r0.<T1_A: int zar(int)>($i43);
-
-        $i44 = i95 + 45;
-
-        i96 = virtualinvoke $r0.<T1_A: int zar(int)>($i44);
-
-        $i45 = i96 + 46;
-
-        i97 = virtualinvoke $r0.<T1_A: int zar(int)>($i45);
-
-        $i46 = i97 + 47;
-
-        i98 = virtualinvoke $r0.<T1_A: int zar(int)>($i46);
-
-        $i47 = i98 + 48;
-
-        i99 = virtualinvoke $r0.<T1_A: int zar(int)>($i47);
-
-        $i48 = i99 + 49;
-
-        i100 = virtualinvoke $r0.<T1_A: int zar(int)>($i48);
-
-        $i49 = i100 + 50;
-
-        i101 = virtualinvoke $r0.<T1_A: int zar(int)>($i49);
-
-        $i50 = i101 + 1;
-
-        return $i50;
+        return $r1;
     }
 
     public int zar(int)

@@ -14,185 +14,612 @@ public class T1 extends java.lang.Object
 
     public static void main(java.lang.String[])
     {
-        T1_A $r0, $r7, $r8, $r9, $r10, r34, r37, r40;
-        T1_D $r2, $r11, $r15, $r16, $r18, $r21, $r24, $r25, $r27, $r28;
-        T1_B $r4, $r5, $r6, $r19;
-        T1_C $r13, $r31;
-        int $i0, $i1, $i3, $i4, i8, i9, i10, i11, i13, i14, i15, i18, i20;
-        java.lang.String[] r33;
+        T1_B $r0, $r1, $r2, r35, r37, r39, r41, r43, r45, r47, r49, r51, r53, r55, r57, r59, r61;
+        T1_A $r3, $r4, r30, r32, r33, r64, r66;
+        T1_D $r5, $r6, $r8, $r9, $r10, $r11, $r12, $r13, $r14, $r15, $r16, $r17, $r18, $r19, $r20, $r21, $r22, $r23, $r24, $r25, $r26, r31, r34, r36, r38, r40, r42, r44, r46, r48, r50, r52, r54, r56, r58, r60;
+        T1_C $r7, $r27, $r28, r62, r63, r65;
+        int $i0, $i2, $i3, i5, i6, i7, i8, i9, i10, i11, i12, i13, i14, i15, i16, i17, i18, i19, i20, i21, i22, i23, i24, i25, i26, i27, i28;
+        java.lang.String[] r29;
 
-        r33 := @parameter0: java.lang.String[];
+        r29 := @parameter0: java.lang.String[];
 
-        $r0 = new T1_A;
+        r30 = new T1_A;
 
-        specialinvoke $r0.<T1_A: void <init>()>();
+        specialinvoke r30.<T1_A: void <init>()>();
 
-        $r2 = new T1_D;
+        r31 = new T1_D;
 
-        specialinvoke $r2.<T1_D: void <init>()>();
+        specialinvoke r31.<T1_D: void <init>()>();
 
-        $r4 = new T1_B;
+        $r0 = new T1_B;
 
-        specialinvoke $r4.<T1_B: void <init>()>();
+        specialinvoke $r0.<T1_B: void <init>()>();
 
-        $r2.<T1_B: T1_A a2> = $r4;
+        r31.<T1_B: T1_A a2> = $r0;
 
-        $r5 = new T1_B;
+        $r1 = new T1_B;
 
-        specialinvoke $r5.<T1_B: void <init>()>();
+        specialinvoke $r1.<T1_B: void <init>()>();
 
-        $r2.<T1_B: T1_A a1> = $r5;
+        r31.<T1_B: T1_A a1> = $r1;
 
-        $r7 = $r2.<T1_B: T1_A a1>;
+        $r3 = r31.<T1_B: T1_A a1>;
 
-        $r6 = new T1_B;
+        $r2 = new T1_B;
 
-        specialinvoke $r6.<T1_B: void <init>()>();
+        specialinvoke $r2.<T1_B: void <init>()>();
 
-        $r7.<T1_A: T1_A a1> = $r6;
+        $r3.<T1_A: T1_A a1> = $r2;
 
-        $r8 = $r2.<T1_B: T1_A a1>;
+        $r4 = r31.<T1_B: T1_A a1>;
 
-        r34 = $r8.<T1_A: T1_A a1>;
+        r32 = $r4.<T1_A: T1_A a1>;
 
-        $r9 = $r2.<T1_B: T1_A a2>;
+        r33 = r31.<T1_B: T1_A a2>;
 
-        $r10 = virtualinvoke $r2.<T1_B: T1_A foo(T1_A)>($r2);
+        r34 = new T1_D;
 
-        $r9.<T1_A: T1_A a1> = $r10;
+        specialinvoke r34.<T1_D: void <init>()>();
+
+        $r5 = new T1_D;
+
+        specialinvoke $r5.<T1_D: void <init>()>();
+
+        r34.<T1_D: T1_B b1> = $r5;
+
+        r35 = r34.<T1_D: T1_B b1>;
+
+        goto label01;
+
+     label01:
+        goto label02;
+
+     label02:
+        r33.<T1_A: T1_A a1> = r35;
+
+        $r6 = new T1_D;
+
+        specialinvoke $r6.<T1_D: void <init>()>();
+
+        $r7 = new T1_C;
+
+        specialinvoke $r7.<T1_C: void <init>()>();
+
+        r36 = new T1_D;
+
+        specialinvoke r36.<T1_D: void <init>()>();
+
+        $r8 = new T1_D;
+
+        specialinvoke $r8.<T1_D: void <init>()>();
+
+        r36.<T1_D: T1_B b1> = $r8;
+
+        r37 = r36.<T1_D: T1_B b1>;
+
+        goto label03;
+
+     label03:
+        goto label04;
+
+     label04:
+        r38 = new T1_D;
+
+        specialinvoke r38.<T1_D: void <init>()>();
+
+        $r9 = new T1_D;
+
+        specialinvoke $r9.<T1_D: void <init>()>();
+
+        r38.<T1_D: T1_B b1> = $r9;
+
+        r39 = r38.<T1_D: T1_B b1>;
+
+        goto label05;
+
+     label05:
+        goto label06;
+
+     label06:
+        i5 = 80;
+
+        i6 = 0;
+
+     label07:
+        if i6 >= 100 goto label08;
+
+        i5 = i5 + 1;
+
+        i6 = i6 + 1;
+
+        goto label07;
+
+     label08:
+        i7 = 0;
+
+     label09:
+        if i7 >= 50 goto label10;
+
+        i5 = i5 + -2;
+
+        i7 = i7 + 1;
+
+        goto label09;
+
+     label10:
+        i8 = 0;
+
+     label11:
+        if i8 >= 100 goto label12;
+
+        i5 = i5 + 1;
+
+        i8 = i8 + 1;
+
+        goto label11;
+
+     label12:
+        i9 = 0;
+
+     label13:
+        if i9 >= 50 goto label14;
+
+        i5 = i5 + -2;
+
+        i9 = i9 + 1;
+
+        goto label13;
+
+     label14:
+        i10 = i5 + 5;
+
+        goto label15;
+
+     label15:
+        i11 = 80 + i10;
+
+        $r10 = new T1_D;
+
+        specialinvoke $r10.<T1_D: void <init>()>();
+
+        r30.<T1_A: T1_A a1> = $r10;
+
+        r40 = new T1_D;
+
+        specialinvoke r40.<T1_D: void <init>()>();
 
         $r11 = new T1_D;
 
         specialinvoke $r11.<T1_D: void <init>()>();
 
-        $r13 = new T1_C;
+        r40.<T1_D: T1_B b1> = $r11;
 
-        specialinvoke $r13.<T1_C: void <init>()>();
+        $i0 = i11 + 2;
 
-        virtualinvoke $r2.<T1_B: T1_A foo(T1_A)>(r34);
+        r41 = r40.<T1_D: T1_B b1>;
 
-        virtualinvoke $r11.<T1_B: T1_A foo(T1_A)>($r2);
+        i12 = $i0 - 3;
 
-        $i0 = virtualinvoke $r13.<T1_C: int zar(int)>(80);
+        goto label16;
 
-        i8 = 80 + $i0;
+     label16:
+        staticinvoke <T1_B: int bar(int)>(i12);
+
+        r42 = new T1_D;
+
+        specialinvoke r42.<T1_D: void <init>()>();
+
+        $r12 = new T1_D;
+
+        specialinvoke $r12.<T1_D: void <init>()>();
+
+        r42.<T1_D: T1_B b1> = $r12;
+
+        r43 = r42.<T1_D: T1_B b1>;
+
+        goto label17;
+
+     label17:
+        goto label18;
+
+     label18:
+        $r13 = new T1_D;
+
+        specialinvoke $r13.<T1_D: void <init>()>();
+
+        goto label19;
+
+     label19:
+        r44 = new T1_D;
+
+        specialinvoke r44.<T1_D: void <init>()>();
+
+        $r14 = new T1_D;
+
+        specialinvoke $r14.<T1_D: void <init>()>();
+
+        r44.<T1_D: T1_B b1> = $r14;
+
+        r45 = r44.<T1_D: T1_B b1>;
+
+        goto label20;
+
+     label20:
+        goto label21;
+
+     label21:
+        r46 = new T1_D;
+
+        specialinvoke r46.<T1_D: void <init>()>();
 
         $r15 = new T1_D;
 
         specialinvoke $r15.<T1_D: void <init>()>();
 
-        $r0.<T1_A: T1_A a1> = $r15;
+        r46.<T1_D: T1_B b1> = $r15;
+
+        r47 = r46.<T1_D: T1_B b1>;
+
+        goto label22;
+
+     label22:
+        goto label23;
+
+     label23:
+        r48 = new T1_D;
+
+        specialinvoke r48.<T1_D: void <init>()>();
 
         $r16 = new T1_D;
 
         specialinvoke $r16.<T1_D: void <init>()>();
 
+        r48.<T1_D: T1_B b1> = $r16;
+
+        r49 = r48.<T1_D: T1_B b1>;
+
+        goto label24;
+
+     label24:
+        goto label25;
+
+     label25:
+        r50 = new T1_D;
+
+        specialinvoke r50.<T1_D: void <init>()>();
+
+        $r17 = new T1_D;
+
+        specialinvoke $r17.<T1_D: void <init>()>();
+
+        r50.<T1_D: T1_B b1> = $r17;
+
+        r51 = r50.<T1_D: T1_B b1>;
+
+        goto label26;
+
+     label26:
+        goto label27;
+
+     label27:
+        r52 = new T1_D;
+
+        specialinvoke r52.<T1_D: void <init>()>();
+
         $r18 = new T1_D;
 
         specialinvoke $r18.<T1_D: void <init>()>();
 
-        $r16.<T1_D: T1_B b1> = $r18;
+        r52.<T1_D: T1_B b1> = $r18;
 
-        i9 = i8 + 2;
+        r53 = r52.<T1_D: T1_B b1>;
 
-        $r19 = $r16.<T1_D: T1_B b1>;
+        goto label28;
 
-        i10 = virtualinvoke $r19.<T1_B: int zar(int)>(i9);
+     label28:
+        goto label29;
 
-        $i1 = staticinvoke <T1_B: int bar(int)>(i10);
+     label29:
+        r54 = new T1_D;
 
-        i11 = i10 + $i1;
+        specialinvoke r54.<T1_D: void <init>()>();
 
-        virtualinvoke $r11.<T1_B: T1_A foo(T1_A)>($r11);
+        $r19 = new T1_D;
+
+        specialinvoke $r19.<T1_D: void <init>()>();
+
+        r54.<T1_D: T1_B b1> = $r19;
+
+        r55 = r54.<T1_D: T1_B b1>;
+
+        goto label30;
+
+     label30:
+        goto label31;
+
+     label31:
+        r56 = new T1_D;
+
+        specialinvoke r56.<T1_D: void <init>()>();
+
+        $r20 = new T1_D;
+
+        specialinvoke $r20.<T1_D: void <init>()>();
+
+        r56.<T1_D: T1_B b1> = $r20;
+
+        r57 = r56.<T1_D: T1_B b1>;
+
+        goto label32;
+
+     label32:
+        goto label33;
+
+     label33:
+        i13 = i11;
+
+        i14 = 0;
+
+     label34:
+        if i14 >= 100 goto label35;
+
+        i13 = i13 + 1;
+
+        i14 = i14 + 1;
+
+        goto label34;
+
+     label35:
+        i15 = 0;
+
+     label36:
+        if i15 >= 50 goto label37;
+
+        i13 = i13 + -2;
+
+        i15 = i15 + 1;
+
+        goto label36;
+
+     label37:
+        i16 = 0;
+
+     label38:
+        if i16 >= 100 goto label39;
+
+        i13 = i13 + 1;
+
+        i16 = i16 + 1;
+
+        goto label38;
+
+     label39:
+        i17 = 0;
+
+     label40:
+        if i17 >= 50 goto label41;
+
+        i13 = i13 + -2;
+
+        i17 = i17 + 1;
+
+        goto label40;
+
+     label41:
+        i18 = i13 + 5;
+
+        goto label42;
+
+     label42:
+        $i2 = i11 + i18;
 
         $r21 = new T1_D;
 
         specialinvoke $r21.<T1_D: void <init>()>();
 
-        virtualinvoke $r21.<T1_B: int zar(int)>(i11);
+        r30.<T1_A: T1_A a1> = $r21;
 
-        r37 = virtualinvoke $r2.<T1_B: T1_A foo(T1_A)>($r11);
+        $r22 = new T1_D;
 
-        virtualinvoke $r2.<T1_B: T1_A foo(T1_A)>(r37);
+        specialinvoke $r22.<T1_D: void <init>()>();
 
-        virtualinvoke $r11.<T1_B: T1_A foo(T1_A)>($r2);
+        $r23 = new T1_D;
 
-        virtualinvoke $r11.<T1_B: T1_A foo(T1_A)>($r11);
+        specialinvoke $r23.<T1_D: void <init>()>();
 
-        r40 = virtualinvoke $r2.<T1_B: T1_A foo(T1_A)>($r11);
+        r40.<T1_D: T1_B b1> = $r23;
 
-        virtualinvoke $r2.<T1_B: T1_A foo(T1_A)>(r40);
+        $i3 = $i2 + 2;
 
-        virtualinvoke $r11.<T1_B: T1_A foo(T1_A)>($r2);
-
-        $i3 = virtualinvoke $r13.<T1_C: int zar(int)>(i8);
-
-        i13 = i8 + $i3;
+        staticinvoke <T1_B: int bar(int)>($i3);
 
         $r24 = new T1_D;
 
         specialinvoke $r24.<T1_D: void <init>()>();
 
-        $r0.<T1_A: T1_A a1> = $r24;
+        goto label43;
+
+     label43:
+        r58 = new T1_D;
+
+        specialinvoke r58.<T1_D: void <init>()>();
 
         $r25 = new T1_D;
 
         specialinvoke $r25.<T1_D: void <init>()>();
 
-        $r27 = new T1_D;
+        r58.<T1_D: T1_B b1> = $r25;
 
-        specialinvoke $r27.<T1_D: void <init>()>();
+        r59 = r58.<T1_D: T1_B b1>;
 
-        $r16.<T1_D: T1_B b1> = $r27;
+        goto label44;
 
-        i14 = i13 + 2;
+     label44:
+        goto label45;
 
-        $i4 = staticinvoke <T1_B: int bar(int)>(i14);
+     label45:
+        r60 = new T1_D;
 
-        i15 = i14 + $i4;
+        specialinvoke r60.<T1_D: void <init>()>();
 
-        $r28 = new T1_D;
+        $r26 = new T1_D;
 
-        specialinvoke $r28.<T1_D: void <init>()>();
+        specialinvoke $r26.<T1_D: void <init>()>();
 
-        virtualinvoke $r28.<T1_B: int zar(int)>(i15);
+        r60.<T1_D: T1_B b1> = $r26;
 
-        virtualinvoke $r11.<T1_B: T1_A foo(T1_A)>($r11);
+        r61 = r60.<T1_D: T1_B b1>;
 
-        virtualinvoke $r2.<T1_B: T1_A foo(T1_A)>($r11);
+        goto label46;
 
-        $r31 = new T1_C;
+     label46:
+        goto label47;
 
-        specialinvoke $r31.<T1_C: void <init>()>();
+     label47:
+        r62 = new T1_C;
 
-        i18 = 0;
+        specialinvoke r62.<T1_C: void <init>()>();
 
-     label1:
-        if i18 >= 100000 goto label2;
+        i19 = 0;
 
-        virtualinvoke $r31.<T1_C: T1_A foo(T1_A)>($r31);
+     label48:
+        if i19 >= 100000 goto label59;
 
-        virtualinvoke $r31.<T1_C: int zar(int)>(1);
+        r63 = new T1_C;
 
-        i18 = i18 + 1;
+        specialinvoke r63.<T1_C: void <init>()>();
 
-        goto label1;
+        r62.<T1_A: T1_A a1> = r63;
 
-     label2:
+        $r28 = new T1_C;
+
+        specialinvoke $r28.<T1_C: void <init>()>();
+
+        r63.<T1_C: T1_A a3> = $r28;
+
+        r64 = r63.<T1_C: T1_A a3>;
+
+        goto label49;
+
+     label49:
         i20 = 0;
 
-     label3:
-        if i20 >= 100000 goto label4;
-
-        virtualinvoke $r31.<T1_C: T1_A foo(T1_A)>($r31);
-
-        virtualinvoke $r31.<T1_C: int zar(int)>(1);
+     label50:
+        if i20 >= 100 goto label51;
 
         i20 = i20 + 1;
 
-        goto label3;
+        goto label50;
 
-     label4:
+     label51:
+        i21 = 0;
+
+     label52:
+        if i21 >= 50 goto label53;
+
+        i21 = i21 + 1;
+
+        goto label52;
+
+     label53:
+        i22 = 0;
+
+     label54:
+        if i22 >= 100 goto label55;
+
+        i22 = i22 + 1;
+
+        goto label54;
+
+     label55:
+        i23 = 0;
+
+     label56:
+        if i23 >= 50 goto label57;
+
+        i23 = i23 + 1;
+
+        goto label56;
+
+     label57:
+        goto label58;
+
+     label58:
+        i19 = i19 + 1;
+
+        goto label48;
+
+     label59:
+        i24 = 0;
+
+     label60:
+        if i24 >= 100000 goto label71;
+
+        r65 = new T1_C;
+
+        specialinvoke r65.<T1_C: void <init>()>();
+
+        r62.<T1_A: T1_A a1> = r65;
+
+        $r27 = new T1_C;
+
+        specialinvoke $r27.<T1_C: void <init>()>();
+
+        r65.<T1_C: T1_A a3> = $r27;
+
+        r66 = r65.<T1_C: T1_A a3>;
+
+        goto label61;
+
+     label61:
+        i25 = 0;
+
+     label62:
+        if i25 >= 100 goto label63;
+
+        i25 = i25 + 1;
+
+        goto label62;
+
+     label63:
+        i26 = 0;
+
+     label64:
+        if i26 >= 50 goto label65;
+
+        i26 = i26 + 1;
+
+        goto label64;
+
+     label65:
+        i27 = 0;
+
+     label66:
+        if i27 >= 100 goto label67;
+
+        i27 = i27 + 1;
+
+        goto label66;
+
+     label67:
+        i28 = 0;
+
+     label68:
+        if i28 >= 50 goto label69;
+
+        i28 = i28 + 1;
+
+        goto label68;
+
+     label69:
+        goto label70;
+
+     label70:
+        i24 = i24 + 1;
+
+        goto label60;
+
+     label71:
         return;
     }
 }

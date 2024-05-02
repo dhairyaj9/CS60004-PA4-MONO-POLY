@@ -14,68 +14,68 @@ public class T3 extends java.lang.Object
 
     public static void main(java.lang.String[])
     {
-        T3_A $r0, $r4, $r5, $r6, $r7, r23;
-        T3_B $r1, $r2, $r3;
-        T3_D r8, r22;
-        java.lang.String[] r21;
+        T3_A $r0, $r7, $r8, $r9, $r10, r18;
+        T3_D $r2, $r11;
+        T3_B $r4, $r5, $r6;
+        java.lang.String[] r17;
         int i0, i1, i2, i3;
 
-        r21 := @parameter0: java.lang.String[];
+        r17 := @parameter0: java.lang.String[];
 
         $r0 = new T3_A;
 
         specialinvoke $r0.<T3_A: void <init>()>();
 
-        r22 = new T3_D;
+        $r2 = new T3_D;
 
-        specialinvoke r22.<T3_D: void <init>()>();
+        specialinvoke $r2.<T3_D: void <init>()>();
 
-        $r1 = new T3_B;
+        $r4 = new T3_B;
 
-        specialinvoke $r1.<T3_B: void <init>()>();
+        specialinvoke $r4.<T3_B: void <init>()>();
 
-        r22.<T3_B: T3_A a2> = $r1;
+        $r2.<T3_B: T3_A a2> = $r4;
 
-        $r2 = new T3_B;
+        $r5 = new T3_B;
 
-        specialinvoke $r2.<T3_B: void <init>()>();
+        specialinvoke $r5.<T3_B: void <init>()>();
 
-        r22.<T3_B: T3_A a1> = $r2;
+        $r2.<T3_B: T3_A a1> = $r5;
 
-        $r4 = r22.<T3_B: T3_A a1>;
+        $r7 = $r2.<T3_B: T3_A a1>;
 
-        $r3 = new T3_B;
+        $r6 = new T3_B;
 
-        specialinvoke $r3.<T3_B: void <init>()>();
+        specialinvoke $r6.<T3_B: void <init>()>();
 
-        $r4.<T3_A: T3_A a1> = $r3;
+        $r7.<T3_A: T3_A a1> = $r6;
 
-        $r5 = r22.<T3_B: T3_A a1>;
+        $r8 = $r2.<T3_B: T3_A a1>;
 
-        r23 = $r5.<T3_A: T3_A a1>;
+        r18 = $r8.<T3_A: T3_A a1>;
 
-        $r6 = r22.<T3_B: T3_A a2>;
+        $r9 = $r2.<T3_B: T3_A a2>;
 
-        $r7 = virtualinvoke r22.<T3_B: T3_A foo(T3_A)>(r22);
+        $r10 = virtualinvoke $r2.<T3_B: T3_A foo(T3_A)>($r2);
 
-        $r6.<T3_A: T3_A a1> = $r7;
+        $r9.<T3_A: T3_A a1> = $r10;
 
-        r8 = new T3_D;
+        $r11 = new T3_D;
 
-        specialinvoke r8.<T3_D: void <init>()>();
+        specialinvoke $r11.<T3_D: void <init>()>();
 
         i0 = 0;
 
      label1:
         if i0 >= 1000000 goto label2;
 
-        virtualinvoke r22.<T3_B: T3_A foo(T3_A)>(r23);
+        virtualinvoke $r2.<T3_B: T3_A foo(T3_A)>(r18);
 
-        virtualinvoke r8.<T3_B: T3_A foo(T3_A)>(r22);
+        virtualinvoke $r11.<T3_B: T3_A foo(T3_A)>($r2);
 
-        virtualinvoke r8.<T3_B: T3_A foo(T3_A)>(r8);
+        virtualinvoke $r11.<T3_B: T3_A foo(T3_A)>($r11);
 
-        r23 = virtualinvoke r22.<T3_B: T3_A foo(T3_A)>(r8);
+        r18 = virtualinvoke $r2.<T3_B: T3_A foo(T3_A)>($r11);
 
         i0 = i0 + 1;
 
@@ -87,13 +87,13 @@ public class T3 extends java.lang.Object
      label3:
         if i1 >= 1000000 goto label4;
 
-        virtualinvoke r22.<T3_B: T3_A foo(T3_A)>(r23);
+        virtualinvoke $r2.<T3_B: T3_A foo(T3_A)>(r18);
 
-        virtualinvoke r8.<T3_B: T3_A foo(T3_A)>(r22);
+        virtualinvoke $r11.<T3_B: T3_A foo(T3_A)>($r2);
 
-        virtualinvoke r8.<T3_B: T3_A foo(T3_A)>(r8);
+        virtualinvoke $r11.<T3_B: T3_A foo(T3_A)>($r11);
 
-        r23 = virtualinvoke r22.<T3_B: T3_A foo(T3_A)>(r8);
+        r18 = virtualinvoke $r2.<T3_B: T3_A foo(T3_A)>($r11);
 
         i1 = i1 + 1;
 
@@ -105,13 +105,13 @@ public class T3 extends java.lang.Object
      label5:
         if i2 >= 1000000 goto label6;
 
-        virtualinvoke r22.<T3_B: T3_A foo(T3_A)>(r23);
+        virtualinvoke $r2.<T3_B: T3_A foo(T3_A)>(r18);
 
-        virtualinvoke r8.<T3_B: T3_A foo(T3_A)>(r22);
+        virtualinvoke $r11.<T3_B: T3_A foo(T3_A)>($r2);
 
-        virtualinvoke r8.<T3_B: T3_A foo(T3_A)>(r8);
+        virtualinvoke $r11.<T3_B: T3_A foo(T3_A)>($r11);
 
-        r23 = virtualinvoke r22.<T3_B: T3_A foo(T3_A)>(r8);
+        r18 = virtualinvoke $r2.<T3_B: T3_A foo(T3_A)>($r11);
 
         i2 = i2 + 1;
 
@@ -123,13 +123,13 @@ public class T3 extends java.lang.Object
      label7:
         if i3 >= 1000000 goto label8;
 
-        virtualinvoke r22.<T3_B: T3_A foo(T3_A)>(r23);
+        virtualinvoke $r2.<T3_B: T3_A foo(T3_A)>(r18);
 
-        virtualinvoke r8.<T3_B: T3_A foo(T3_A)>(r22);
+        virtualinvoke $r11.<T3_B: T3_A foo(T3_A)>($r2);
 
-        virtualinvoke r8.<T3_B: T3_A foo(T3_A)>(r8);
+        virtualinvoke $r11.<T3_B: T3_A foo(T3_A)>($r11);
 
-        r23 = virtualinvoke r22.<T3_B: T3_A foo(T3_A)>(r8);
+        r18 = virtualinvoke $r2.<T3_B: T3_A foo(T3_A)>($r11);
 
         i3 = i3 + 1;
 

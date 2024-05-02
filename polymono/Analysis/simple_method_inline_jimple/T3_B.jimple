@@ -15,28 +15,28 @@ class T3_B extends T3_A
 
     public T3_A foo(T3_A)
     {
-        T3_A r0, $r2;
-        T3_B $r1, r3;
-        T3_D r4;
+        T3_D $r0;
+        T3_A r2, r4;
+        T3_B $r3, r5;
 
-        r3 := @this: T3_B;
+        r5 := @this: T3_B;
 
-        r0 := @parameter0: T3_A;
+        r2 := @parameter0: T3_A;
 
-        r4 = new T3_D;
+        $r0 = new T3_D;
 
-        specialinvoke r4.<T3_D: void <init>()>();
+        specialinvoke $r0.<T3_D: void <init>()>();
 
-        r0.<T3_A: T3_A a1> = r4;
+        r2.<T3_A: T3_A a1> = $r0;
 
-        $r1 = new T3_B;
+        $r3 = new T3_B;
 
-        specialinvoke $r1.<T3_B: void <init>()>();
+        specialinvoke $r3.<T3_B: void <init>()>();
 
-        r4.<T3_B: T3_A a2> = $r1;
+        $r0.<T3_B: T3_A a2> = $r3;
 
-        $r2 = r4.<T3_B: T3_A a2>;
+        r4 = $r0.<T3_B: T3_A a2>;
 
-        return $r2;
+        return r4;
     }
 }

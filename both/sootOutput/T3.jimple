@@ -14,9 +14,9 @@ public class T3 extends java.lang.Object
 
     public static void main(java.lang.String[])
     {
-        T3_A $r0, $r7, $r8, $r9, $r10, r18;
-        T3_D $r2, $r11;
-        T3_B $r4, $r5, $r6;
+        T3_A $r0, $r7, $r8, $r9, r18;
+        T3_D $r2, $r11, $r0_inlined_28_inlined_52, $r2_inlined_28_inlined_52, $r0_inlined_28_inlined_57, $r2_inlined_28_inlined_57, $r0_inlined_28_inlined_58, $r2_inlined_28_inlined_58, $r0_inlined_28_inlined_59, $r2_inlined_28_inlined_59, $r0_inlined_28_inlined_60, $r2_inlined_28_inlined_60, $r0_inlined_28_inlined_63, $r2_inlined_28_inlined_63, $r0_inlined_28_inlined_64, $r2_inlined_28_inlined_64, $r0_inlined_28_inlined_65, $r2_inlined_28_inlined_65, $r0_inlined_28_inlined_66, $r2_inlined_28_inlined_66, $r0_inlined_28_inlined_69, $r2_inlined_28_inlined_69, $r0_inlined_28_inlined_70, $r2_inlined_28_inlined_70, $r0_inlined_28_inlined_71, $r2_inlined_28_inlined_71, $r0_inlined_28_inlined_72, $r2_inlined_28_inlined_72, $r0_inlined_28_inlined_75, $r2_inlined_28_inlined_75, $r0_inlined_28_inlined_76, $r2_inlined_28_inlined_76, $r0_inlined_28_inlined_77, $r2_inlined_28_inlined_77, $r0_inlined_28_inlined_78, $r2_inlined_28_inlined_78;
+        T3_B $r4, $r5, $r6, r3_inlined_28_inlined_52, r3_inlined_28_inlined_57, r3_inlined_28_inlined_58, r3_inlined_28_inlined_59, r3_inlined_28_inlined_60, r3_inlined_28_inlined_63, r3_inlined_28_inlined_64, r3_inlined_28_inlined_65, r3_inlined_28_inlined_66, r3_inlined_28_inlined_69, r3_inlined_28_inlined_70, r3_inlined_28_inlined_71, r3_inlined_28_inlined_72, r3_inlined_28_inlined_75, r3_inlined_28_inlined_76, r3_inlined_28_inlined_77, r3_inlined_28_inlined_78;
         java.lang.String[] r17;
         int i0, i1, i2, i3;
 
@@ -56,9 +56,25 @@ public class T3 extends java.lang.Object
 
         $r9 = $r2.<T3_B: T3_A a2>;
 
-        $r10 = virtualinvoke $r2.<T3_B: T3_A foo(T3_A)>($r2);
+        $r0_inlined_28_inlined_52 = new T3_D;
 
-        $r9.<T3_A: T3_A a1> = $r10;
+        specialinvoke $r0_inlined_28_inlined_52.<T3_D: void <init>()>();
+
+        $r2_inlined_28_inlined_52 = new T3_D;
+
+        specialinvoke $r2_inlined_28_inlined_52.<T3_D: void <init>()>();
+
+        $r0_inlined_28_inlined_52.<T3_D: T3_B b1> = $r2_inlined_28_inlined_52;
+
+        r3_inlined_28_inlined_52 = $r0_inlined_28_inlined_52.<T3_D: T3_B b1>;
+
+        goto label01;
+
+     label01:
+        goto label02;
+
+     label02:
+        $r9.<T3_A: T3_A a1> = r3_inlined_28_inlined_52;
 
         $r11 = new T3_D;
 
@@ -66,76 +82,332 @@ public class T3 extends java.lang.Object
 
         i0 = 0;
 
-     label1:
-        if i0 >= 1000000 goto label2;
+     label03:
+        if i0 >= 1000000 goto label12;
 
-        virtualinvoke $r2.<T3_B: T3_A foo(T3_A)>(r18);
+        $r0_inlined_28_inlined_57 = new T3_D;
 
-        virtualinvoke $r11.<T3_B: T3_A foo(T3_A)>($r2);
+        specialinvoke $r0_inlined_28_inlined_57.<T3_D: void <init>()>();
 
-        virtualinvoke $r11.<T3_B: T3_A foo(T3_A)>($r11);
+        $r2_inlined_28_inlined_57 = new T3_D;
 
-        r18 = virtualinvoke $r2.<T3_B: T3_A foo(T3_A)>($r11);
+        specialinvoke $r2_inlined_28_inlined_57.<T3_D: void <init>()>();
 
+        $r0_inlined_28_inlined_57.<T3_D: T3_B b1> = $r2_inlined_28_inlined_57;
+
+        r3_inlined_28_inlined_57 = $r0_inlined_28_inlined_57.<T3_D: T3_B b1>;
+
+        goto label04;
+
+     label04:
+        goto label05;
+
+     label05:
+        $r0_inlined_28_inlined_58 = new T3_D;
+
+        specialinvoke $r0_inlined_28_inlined_58.<T3_D: void <init>()>();
+
+        $r2_inlined_28_inlined_58 = new T3_D;
+
+        specialinvoke $r2_inlined_28_inlined_58.<T3_D: void <init>()>();
+
+        $r0_inlined_28_inlined_58.<T3_D: T3_B b1> = $r2_inlined_28_inlined_58;
+
+        r3_inlined_28_inlined_58 = $r0_inlined_28_inlined_58.<T3_D: T3_B b1>;
+
+        goto label06;
+
+     label06:
+        goto label07;
+
+     label07:
+        $r0_inlined_28_inlined_59 = new T3_D;
+
+        specialinvoke $r0_inlined_28_inlined_59.<T3_D: void <init>()>();
+
+        $r2_inlined_28_inlined_59 = new T3_D;
+
+        specialinvoke $r2_inlined_28_inlined_59.<T3_D: void <init>()>();
+
+        $r0_inlined_28_inlined_59.<T3_D: T3_B b1> = $r2_inlined_28_inlined_59;
+
+        r3_inlined_28_inlined_59 = $r0_inlined_28_inlined_59.<T3_D: T3_B b1>;
+
+        goto label08;
+
+     label08:
+        goto label09;
+
+     label09:
+        $r0_inlined_28_inlined_60 = new T3_D;
+
+        specialinvoke $r0_inlined_28_inlined_60.<T3_D: void <init>()>();
+
+        $r2_inlined_28_inlined_60 = new T3_D;
+
+        specialinvoke $r2_inlined_28_inlined_60.<T3_D: void <init>()>();
+
+        $r0_inlined_28_inlined_60.<T3_D: T3_B b1> = $r2_inlined_28_inlined_60;
+
+        r3_inlined_28_inlined_60 = $r0_inlined_28_inlined_60.<T3_D: T3_B b1>;
+
+        goto label10;
+
+     label10:
+        goto label11;
+
+     label11:
         i0 = i0 + 1;
 
-        goto label1;
+        goto label03;
 
-     label2:
+     label12:
         i1 = 0;
 
-     label3:
-        if i1 >= 1000000 goto label4;
+     label13:
+        if i1 >= 1000000 goto label22;
 
-        virtualinvoke $r2.<T3_B: T3_A foo(T3_A)>(r18);
+        $r0_inlined_28_inlined_63 = new T3_D;
 
-        virtualinvoke $r11.<T3_B: T3_A foo(T3_A)>($r2);
+        specialinvoke $r0_inlined_28_inlined_63.<T3_D: void <init>()>();
 
-        virtualinvoke $r11.<T3_B: T3_A foo(T3_A)>($r11);
+        $r2_inlined_28_inlined_63 = new T3_D;
 
-        r18 = virtualinvoke $r2.<T3_B: T3_A foo(T3_A)>($r11);
+        specialinvoke $r2_inlined_28_inlined_63.<T3_D: void <init>()>();
 
+        $r0_inlined_28_inlined_63.<T3_D: T3_B b1> = $r2_inlined_28_inlined_63;
+
+        r3_inlined_28_inlined_63 = $r0_inlined_28_inlined_63.<T3_D: T3_B b1>;
+
+        goto label14;
+
+     label14:
+        goto label15;
+
+     label15:
+        $r0_inlined_28_inlined_64 = new T3_D;
+
+        specialinvoke $r0_inlined_28_inlined_64.<T3_D: void <init>()>();
+
+        $r2_inlined_28_inlined_64 = new T3_D;
+
+        specialinvoke $r2_inlined_28_inlined_64.<T3_D: void <init>()>();
+
+        $r0_inlined_28_inlined_64.<T3_D: T3_B b1> = $r2_inlined_28_inlined_64;
+
+        r3_inlined_28_inlined_64 = $r0_inlined_28_inlined_64.<T3_D: T3_B b1>;
+
+        goto label16;
+
+     label16:
+        goto label17;
+
+     label17:
+        $r0_inlined_28_inlined_65 = new T3_D;
+
+        specialinvoke $r0_inlined_28_inlined_65.<T3_D: void <init>()>();
+
+        $r2_inlined_28_inlined_65 = new T3_D;
+
+        specialinvoke $r2_inlined_28_inlined_65.<T3_D: void <init>()>();
+
+        $r0_inlined_28_inlined_65.<T3_D: T3_B b1> = $r2_inlined_28_inlined_65;
+
+        r3_inlined_28_inlined_65 = $r0_inlined_28_inlined_65.<T3_D: T3_B b1>;
+
+        goto label18;
+
+     label18:
+        goto label19;
+
+     label19:
+        $r0_inlined_28_inlined_66 = new T3_D;
+
+        specialinvoke $r0_inlined_28_inlined_66.<T3_D: void <init>()>();
+
+        $r2_inlined_28_inlined_66 = new T3_D;
+
+        specialinvoke $r2_inlined_28_inlined_66.<T3_D: void <init>()>();
+
+        $r0_inlined_28_inlined_66.<T3_D: T3_B b1> = $r2_inlined_28_inlined_66;
+
+        r3_inlined_28_inlined_66 = $r0_inlined_28_inlined_66.<T3_D: T3_B b1>;
+
+        goto label20;
+
+     label20:
+        goto label21;
+
+     label21:
         i1 = i1 + 1;
 
-        goto label3;
+        goto label13;
 
-     label4:
+     label22:
         i2 = 0;
 
-     label5:
-        if i2 >= 1000000 goto label6;
+     label23:
+        if i2 >= 1000000 goto label32;
 
-        virtualinvoke $r2.<T3_B: T3_A foo(T3_A)>(r18);
+        $r0_inlined_28_inlined_69 = new T3_D;
 
-        virtualinvoke $r11.<T3_B: T3_A foo(T3_A)>($r2);
+        specialinvoke $r0_inlined_28_inlined_69.<T3_D: void <init>()>();
 
-        virtualinvoke $r11.<T3_B: T3_A foo(T3_A)>($r11);
+        $r2_inlined_28_inlined_69 = new T3_D;
 
-        r18 = virtualinvoke $r2.<T3_B: T3_A foo(T3_A)>($r11);
+        specialinvoke $r2_inlined_28_inlined_69.<T3_D: void <init>()>();
 
+        $r0_inlined_28_inlined_69.<T3_D: T3_B b1> = $r2_inlined_28_inlined_69;
+
+        r3_inlined_28_inlined_69 = $r0_inlined_28_inlined_69.<T3_D: T3_B b1>;
+
+        goto label24;
+
+     label24:
+        goto label25;
+
+     label25:
+        $r0_inlined_28_inlined_70 = new T3_D;
+
+        specialinvoke $r0_inlined_28_inlined_70.<T3_D: void <init>()>();
+
+        $r2_inlined_28_inlined_70 = new T3_D;
+
+        specialinvoke $r2_inlined_28_inlined_70.<T3_D: void <init>()>();
+
+        $r0_inlined_28_inlined_70.<T3_D: T3_B b1> = $r2_inlined_28_inlined_70;
+
+        r3_inlined_28_inlined_70 = $r0_inlined_28_inlined_70.<T3_D: T3_B b1>;
+
+        goto label26;
+
+     label26:
+        goto label27;
+
+     label27:
+        $r0_inlined_28_inlined_71 = new T3_D;
+
+        specialinvoke $r0_inlined_28_inlined_71.<T3_D: void <init>()>();
+
+        $r2_inlined_28_inlined_71 = new T3_D;
+
+        specialinvoke $r2_inlined_28_inlined_71.<T3_D: void <init>()>();
+
+        $r0_inlined_28_inlined_71.<T3_D: T3_B b1> = $r2_inlined_28_inlined_71;
+
+        r3_inlined_28_inlined_71 = $r0_inlined_28_inlined_71.<T3_D: T3_B b1>;
+
+        goto label28;
+
+     label28:
+        goto label29;
+
+     label29:
+        $r0_inlined_28_inlined_72 = new T3_D;
+
+        specialinvoke $r0_inlined_28_inlined_72.<T3_D: void <init>()>();
+
+        $r2_inlined_28_inlined_72 = new T3_D;
+
+        specialinvoke $r2_inlined_28_inlined_72.<T3_D: void <init>()>();
+
+        $r0_inlined_28_inlined_72.<T3_D: T3_B b1> = $r2_inlined_28_inlined_72;
+
+        r3_inlined_28_inlined_72 = $r0_inlined_28_inlined_72.<T3_D: T3_B b1>;
+
+        goto label30;
+
+     label30:
+        goto label31;
+
+     label31:
         i2 = i2 + 1;
 
-        goto label5;
+        goto label23;
 
-     label6:
+     label32:
         i3 = 0;
 
-     label7:
-        if i3 >= 1000000 goto label8;
+     label33:
+        if i3 >= 1000000 goto label42;
 
-        virtualinvoke $r2.<T3_B: T3_A foo(T3_A)>(r18);
+        $r0_inlined_28_inlined_75 = new T3_D;
 
-        virtualinvoke $r11.<T3_B: T3_A foo(T3_A)>($r2);
+        specialinvoke $r0_inlined_28_inlined_75.<T3_D: void <init>()>();
 
-        virtualinvoke $r11.<T3_B: T3_A foo(T3_A)>($r11);
+        $r2_inlined_28_inlined_75 = new T3_D;
 
-        r18 = virtualinvoke $r2.<T3_B: T3_A foo(T3_A)>($r11);
+        specialinvoke $r2_inlined_28_inlined_75.<T3_D: void <init>()>();
 
+        $r0_inlined_28_inlined_75.<T3_D: T3_B b1> = $r2_inlined_28_inlined_75;
+
+        r3_inlined_28_inlined_75 = $r0_inlined_28_inlined_75.<T3_D: T3_B b1>;
+
+        goto label34;
+
+     label34:
+        goto label35;
+
+     label35:
+        $r0_inlined_28_inlined_76 = new T3_D;
+
+        specialinvoke $r0_inlined_28_inlined_76.<T3_D: void <init>()>();
+
+        $r2_inlined_28_inlined_76 = new T3_D;
+
+        specialinvoke $r2_inlined_28_inlined_76.<T3_D: void <init>()>();
+
+        $r0_inlined_28_inlined_76.<T3_D: T3_B b1> = $r2_inlined_28_inlined_76;
+
+        r3_inlined_28_inlined_76 = $r0_inlined_28_inlined_76.<T3_D: T3_B b1>;
+
+        goto label36;
+
+     label36:
+        goto label37;
+
+     label37:
+        $r0_inlined_28_inlined_77 = new T3_D;
+
+        specialinvoke $r0_inlined_28_inlined_77.<T3_D: void <init>()>();
+
+        $r2_inlined_28_inlined_77 = new T3_D;
+
+        specialinvoke $r2_inlined_28_inlined_77.<T3_D: void <init>()>();
+
+        $r0_inlined_28_inlined_77.<T3_D: T3_B b1> = $r2_inlined_28_inlined_77;
+
+        r3_inlined_28_inlined_77 = $r0_inlined_28_inlined_77.<T3_D: T3_B b1>;
+
+        goto label38;
+
+     label38:
+        goto label39;
+
+     label39:
+        $r0_inlined_28_inlined_78 = new T3_D;
+
+        specialinvoke $r0_inlined_28_inlined_78.<T3_D: void <init>()>();
+
+        $r2_inlined_28_inlined_78 = new T3_D;
+
+        specialinvoke $r2_inlined_28_inlined_78.<T3_D: void <init>()>();
+
+        $r0_inlined_28_inlined_78.<T3_D: T3_B b1> = $r2_inlined_28_inlined_78;
+
+        r3_inlined_28_inlined_78 = $r0_inlined_28_inlined_78.<T3_D: T3_B b1>;
+
+        goto label40;
+
+     label40:
+        goto label41;
+
+     label41:
         i3 = i3 + 1;
 
-        goto label7;
+        goto label33;
 
-     label8:
+     label42:
         return;
     }
 }

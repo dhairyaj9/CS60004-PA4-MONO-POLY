@@ -55,7 +55,7 @@ public class T3 {
         
         for(int i = 0; i < 1000000; i++){
             a2 = b.foo(a2);
-            a2 = b2.bar(b);
+            a2 = b2.foo(b);
             b2.foo(b2);
             a2 = b.foo(b2);
         }

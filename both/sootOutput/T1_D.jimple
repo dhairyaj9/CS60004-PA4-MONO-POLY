@@ -73,75 +73,8 @@ class T1_D extends T1_B
 
         r1 := @parameter0: T1_A;
 
-        $r2 = staticinvoke <T1_D: T1_B foo_static(T1_A,T1_D)>(r1, r0);
+        $r2 = virtualinvoke r0.<T1_D: T1_B foo(T1_A)>(r1);
 
         return $r2;
-    }
-
-    static T1_B foo_static(T1_A, T1_D)
-    {
-        T1_D $r0, $r2, r4;
-        T1_B r3;
-        T1_A r5;
-
-        r4 := @parameter1: T1_D;
-
-        r5 := @parameter0: T1_A;
-
-        $r0 = new T1_D;
-
-        specialinvoke $r0.<T1_D: void <init>()>();
-
-        $r2 = new T1_D;
-
-        specialinvoke $r2.<T1_D: void <init>()>();
-
-        $r0.<T1_D: T1_B b1> = $r2;
-
-        r3 = $r0.<T1_D: T1_B b1>;
-
-        return r3;
-    }
-
-    static T1_A foo_static(T1_A, T1_D)
-    {
-        T1_D r0, $r0_inlined_155, $r2_inlined_155;
-        T1_A r1;
-        T1_B r3_inlined_155;
-
-        r0 := @parameter1: T1_D;
-
-        r1 := @parameter0: T1_A;
-
-        $r0_inlined_155 = new T1_D;
-
-        specialinvoke $r0_inlined_155.<T1_D: void <init>()>();
-
-        $r2_inlined_155 = new T1_D;
-
-        specialinvoke $r2_inlined_155.<T1_D: void <init>()>();
-
-        $r0_inlined_155.<T1_D: T1_B b1> = $r2_inlined_155;
-
-        r3_inlined_155 = $r0_inlined_155.<T1_D: T1_B b1>;
-
-        goto label1;
-
-     label1:
-        return r3_inlined_155;
-    }
-
-    static int zar_static(int, T1_D)
-    {
-        int i0, $i1;
-        T1_D r0;
-
-        r0 := @parameter1: T1_D;
-
-        i0 := @parameter0: int;
-
-        $i1 = i0 - 3;
-
-        return $i1;
     }
 }
